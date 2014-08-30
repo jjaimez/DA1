@@ -45,7 +45,6 @@ namespace GestionDeNegocio
             this.precioCompra.Text = "";
             this.stockActual.Text = "";
             this.stockMinimo.Text = "";
-            this.cuit.Text = "";
             this.codigo.Text = "";
             this.email.Text = "";
             this.celular.Text = "";
@@ -74,7 +73,6 @@ namespace GestionDeNegocio
             this.precioCompra.Enabled = false;
             this.stockActual.Enabled = false;
             this.stockMinimo.Enabled = false;
-            this.cuit.Enabled = false;
             this.codigo.Enabled = false;
             this.guardar.Enabled = false;
         }
@@ -90,7 +88,6 @@ namespace GestionDeNegocio
             this.precioCompra.Enabled = true;
             this.stockActual.Enabled = true;
             this.stockMinimo.Enabled = true;
-            this.cuit.Enabled = true;
             this.codigo.Enabled = true;
             this.nuevo.Enabled = false;
             this.guardar.Enabled = true;

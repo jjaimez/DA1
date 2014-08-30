@@ -33,6 +33,7 @@
             this.articulo = new System.Windows.Forms.Button();
             this.venta = new System.Windows.Forms.Button();
             this.compra = new System.Windows.Forms.Button();
+            this.sinStock = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cliente
@@ -47,7 +48,7 @@
             // 
             // proveedor
             // 
-            this.proveedor.Location = new System.Drawing.Point(26, 106);
+            this.proveedor.Location = new System.Drawing.Point(26, 107);
             this.proveedor.Name = "proveedor";
             this.proveedor.Size = new System.Drawing.Size(112, 23);
             this.proveedor.TabIndex = 1;
@@ -66,7 +67,7 @@
             // 
             // venta
             // 
-            this.venta.Location = new System.Drawing.Point(26, 149);
+            this.venta.Location = new System.Drawing.Point(26, 153);
             this.venta.Name = "venta";
             this.venta.Size = new System.Drawing.Size(112, 23);
             this.venta.TabIndex = 3;
@@ -82,11 +83,21 @@
             this.compra.Text = "Realizar Compra";
             this.compra.UseVisualStyleBackColor = true;
             // 
+            // sinStock
+            // 
+            this.sinStock.Location = new System.Drawing.Point(26, 243);
+            this.sinStock.Name = "sinStock";
+            this.sinStock.Size = new System.Drawing.Size(112, 23);
+            this.sinStock.TabIndex = 5;
+            this.sinStock.Text = "Articulos sin stock";
+            this.sinStock.UseVisualStyleBackColor = true;
+            // 
             // AplicacionGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 321);
+            this.Controls.Add(this.sinStock);
             this.Controls.Add(this.compra);
             this.Controls.Add(this.venta);
             this.Controls.Add(this.articulo);
@@ -106,6 +117,7 @@
         private System.Windows.Forms.Button articulo;
         private System.Windows.Forms.Button venta;
         private System.Windows.Forms.Button compra;
+        private System.Windows.Forms.Button sinStock;
     }
 }
 

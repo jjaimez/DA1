@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.documento = new System.Windows.Forms.TextBox();
             this.telefono = new System.Windows.Forms.TextBox();
@@ -41,22 +42,12 @@
             this.email = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.tablaClientes = new System.Windows.Forms.TableLayoutPanel();
             this.nuevo = new System.Windows.Forms.Button();
             this.editar = new System.Windows.Forms.Button();
             this.guardar = new System.Windows.Forms.Button();
             this.eliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre: ";
             // 
             // label2
             // 
@@ -103,6 +94,24 @@
             this.label8.Size = new System.Drawing.Size(32, 13);
             this.label8.TabIndex = 7;
             this.label8.Text = "Email";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 353);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(16, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Id";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre: ";
             // 
             // textBox1
             // 
@@ -159,15 +168,6 @@
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(100, 20);
             this.id.TabIndex = 14;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 353);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Id";
             // 
             // tablaClientes
             // 
@@ -263,12 +263,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox documento;
         private System.Windows.Forms.TextBox telefono;
@@ -276,7 +277,6 @@
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.TextBox nombre;
         private System.Windows.Forms.TextBox id;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TableLayoutPanel tablaClientes;
         private System.Windows.Forms.Button nuevo;
         private System.Windows.Forms.Button editar;

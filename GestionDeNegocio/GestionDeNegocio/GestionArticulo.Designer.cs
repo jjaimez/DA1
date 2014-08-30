@@ -32,12 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
-            this.cuit = new System.Windows.Forms.TextBox();
             this.telefono = new System.Windows.Forms.TextBox();
             this.celular = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
@@ -46,7 +44,6 @@
             this.guardar = new System.Windows.Forms.Button();
             this.eliminar = new System.Windows.Forms.Button();
             this.editar = new System.Windows.Forms.Button();
-            this.articulosProvee = new System.Windows.Forms.Button();
             this.stockMinimo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.precioVenta = new System.Windows.Forms.TextBox();
@@ -98,15 +95,6 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Nombre";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 372);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Ciut";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -138,14 +126,6 @@
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(100, 20);
             this.id.TabIndex = 13;
-            // 
-            // cuit
-            // 
-            this.cuit.Enabled = false;
-            this.cuit.Location = new System.Drawing.Point(124, 368);
-            this.cuit.Name = "cuit";
-            this.cuit.Size = new System.Drawing.Size(100, 20);
-            this.cuit.TabIndex = 14;
             // 
             // telefono
             // 
@@ -222,17 +202,6 @@
             this.editar.UseVisualStyleBackColor = true;
             this.editar.Click += new System.EventHandler(this.editar_Click);
             // 
-            // articulosProvee
-            // 
-            this.articulosProvee.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.articulosProvee.Enabled = false;
-            this.articulosProvee.Location = new System.Drawing.Point(456, 478);
-            this.articulosProvee.Name = "articulosProvee";
-            this.articulosProvee.Size = new System.Drawing.Size(127, 23);
-            this.articulosProvee.TabIndex = 23;
-            this.articulosProvee.Text = "Articulos que provee";
-            this.articulosProvee.UseVisualStyleBackColor = true;
-            // 
             // stockMinimo
             // 
             this.stockMinimo.Enabled = false;
@@ -305,7 +274,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(244, 335);
+            this.label12.Location = new System.Drawing.Point(31, 372);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 34;
@@ -333,7 +302,7 @@
             // codigo
             // 
             this.codigo.Enabled = false;
-            this.codigo.Location = new System.Drawing.Point(337, 328);
+            this.codigo.Location = new System.Drawing.Point(124, 365);
             this.codigo.Name = "codigo";
             this.codigo.Size = new System.Drawing.Size(100, 20);
             this.codigo.TabIndex = 33;
@@ -355,7 +324,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.precioVenta);
             this.Controls.Add(this.stockMinimo);
-            this.Controls.Add(this.articulosProvee);
             this.Controls.Add(this.editar);
             this.Controls.Add(this.eliminar);
             this.Controls.Add(this.guardar);
@@ -364,12 +332,10 @@
             this.Controls.Add(this.email);
             this.Controls.Add(this.celular);
             this.Controls.Add(this.telefono);
-            this.Controls.Add(this.cuit);
             this.Controls.Add(this.id);
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -388,12 +354,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox nombre;
         private System.Windows.Forms.TextBox id;
-        private System.Windows.Forms.TextBox cuit;
         private System.Windows.Forms.TextBox telefono;
         private System.Windows.Forms.TextBox celular;
         private System.Windows.Forms.TextBox email;
@@ -402,7 +366,6 @@
         private System.Windows.Forms.Button guardar;
         private System.Windows.Forms.Button eliminar;
         private System.Windows.Forms.Button editar;
-        private System.Windows.Forms.Button articulosProvee;
         private System.Windows.Forms.TextBox stockMinimo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox precioVenta;
