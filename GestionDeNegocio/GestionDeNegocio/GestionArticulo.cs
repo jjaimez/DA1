@@ -40,24 +40,21 @@ namespace GestionDeNegocio
         private void nuevo_Click(object sender, EventArgs e)
         {
             this.nombre.Text = "";
-            this.telefono.Text = "";
+            this.marca.Text = "";
             this.precioVenta.Text = "";
             this.precioCompra.Text = "";
             this.stockActual.Text = "";
             this.stockMinimo.Text = "";
             this.codigo.Text = "";
-            this.email.Text = "";
-            this.celular.Text = "";
+            this.descripcion.Text = "";
             this.nombre.Enabled = true;
-            this.telefono.Enabled = true;   
-            this.email.Enabled = true;
-            this.celular.Enabled = true;
+            this.marca.Enabled = true;   
+            this.descripcion.Enabled = true;
             this.guardar.Enabled = true;
              this.precioVenta.Enabled = true;
             this.precioCompra.Enabled = true;
             this.stockActual.Enabled = true;
             this.stockMinimo.Enabled = true;
-            this.cuit.Enabled = true;
             this.codigo.Enabled = true;
         }
 
@@ -65,9 +62,8 @@ namespace GestionDeNegocio
         {
             /* guardar articulo*/
             this.nombre.Enabled = false;
-            this.telefono.Enabled = false;
-            this.email.Enabled = false;
-            this.celular.Enabled = false;
+            this.marca.Enabled = false;
+            this.descripcion.Enabled = false;
             this.guardar.Enabled = false;
             this.precioVenta.Enabled = false;
             this.precioCompra.Enabled = false;
@@ -80,9 +76,8 @@ namespace GestionDeNegocio
         private void editar_Click(object sender, EventArgs e)
         {
             this.nombre.Enabled = true;
-            this.telefono.Enabled = true;
-            this.email.Enabled = true;
-            this.celular.Enabled = true;
+            this.marca.Enabled = true;
+            this.descripcion.Enabled = true;
             this.guardar.Enabled = true;
             this.precioVenta.Enabled = true;
             this.precioCompra.Enabled = true;
@@ -91,6 +86,11 @@ namespace GestionDeNegocio
             this.codigo.Enabled = true;
             this.nuevo.Enabled = false;
             this.guardar.Enabled = true;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
