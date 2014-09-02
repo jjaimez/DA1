@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDconexion.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="AplicacionGui.cs">
       <SubType>Form</SubType>
@@ -52,6 +53,8 @@
     <Compile Include="AplicacionGui.Designer.cs">
       <DependentUpon>AplicacionGui.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteBD.cs" />
     <Compile Include="Dat_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +123,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

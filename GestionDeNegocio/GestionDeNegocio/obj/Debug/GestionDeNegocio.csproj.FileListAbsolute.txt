@@ -9,7 +9,6 @@ C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegoci
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionArticulo.resources
-C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe.config
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.pdb
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\MySql.Data.dll
@@ -22,3 +21,4 @@ C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.P
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache

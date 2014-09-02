@@ -35,18 +35,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.documento = new System.Windows.Forms.TextBox();
-            this.telefono = new System.Windows.Forms.TextBox();
-            this.celular = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.nombre = new System.Windows.Forms.TextBox();
-            this.id = new System.Windows.Forms.TextBox();
-            this.tablaClientes = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_Nombre = new System.Windows.Forms.TextBox();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtCelular = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.nuevo = new System.Windows.Forms.Button();
             this.editar = new System.Windows.Forms.Button();
             this.guardar = new System.Windows.Forms.Button();
             this.eliminar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.dgv_Buscar = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Buscar)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -113,78 +115,62 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre: ";
             // 
-            // textBox1
+            // txt_Nombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 20);
-            this.textBox1.TabIndex = 8;
+            this.txt_Nombre.Location = new System.Drawing.Point(82, 6);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(186, 20);
+            this.txt_Nombre.TabIndex = 8;
+            this.txt_Nombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // documento
+            // txtDocumento
             // 
-            this.documento.Enabled = false;
-            this.documento.Location = new System.Drawing.Point(94, 407);
-            this.documento.Name = "documento";
-            this.documento.Size = new System.Drawing.Size(100, 20);
-            this.documento.TabIndex = 9;
+            this.txtDocumento.Enabled = false;
+            this.txtDocumento.Location = new System.Drawing.Point(94, 407);
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(100, 20);
+            this.txtDocumento.TabIndex = 9;
             // 
-            // telefono
+            // txtTelefono
             // 
-            this.telefono.Enabled = false;
-            this.telefono.Location = new System.Drawing.Point(94, 430);
-            this.telefono.Name = "telefono";
-            this.telefono.Size = new System.Drawing.Size(100, 20);
-            this.telefono.TabIndex = 10;
+            this.txtTelefono.Enabled = false;
+            this.txtTelefono.Location = new System.Drawing.Point(94, 430);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefono.TabIndex = 10;
             // 
-            // celular
+            // txtCelular
             // 
-            this.celular.Enabled = false;
-            this.celular.Location = new System.Drawing.Point(94, 456);
-            this.celular.Name = "celular";
-            this.celular.Size = new System.Drawing.Size(100, 20);
-            this.celular.TabIndex = 11;
-            this.celular.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtCelular.Enabled = false;
+            this.txtCelular.Location = new System.Drawing.Point(94, 456);
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.Size = new System.Drawing.Size(100, 20);
+            this.txtCelular.TabIndex = 11;
+            this.txtCelular.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // email
+            // txtEmail
             // 
-            this.email.Enabled = false;
-            this.email.Location = new System.Drawing.Point(94, 485);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(100, 20);
-            this.email.TabIndex = 12;
+            this.txtEmail.Enabled = false;
+            this.txtEmail.Location = new System.Drawing.Point(94, 485);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 12;
             // 
-            // nombre
+            // txtNombre
             // 
-            this.nombre.Enabled = false;
-            this.nombre.Location = new System.Drawing.Point(94, 380);
-            this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(100, 20);
-            this.nombre.TabIndex = 13;
+            this.txtNombre.Enabled = false;
+            this.txtNombre.Location = new System.Drawing.Point(94, 380);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 13;
             // 
-            // id
+            // txtID
             // 
-            this.id.Enabled = false;
-            this.id.Location = new System.Drawing.Point(94, 353);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(100, 20);
-            this.id.TabIndex = 14;
-            // 
-            // tablaClientes
-            // 
-            this.tablaClientes.ColumnCount = 6;
-            this.tablaClientes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tablaClientes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tablaClientes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tablaClientes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tablaClientes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tablaClientes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tablaClientes.Location = new System.Drawing.Point(15, 46);
-            this.tablaClientes.Name = "tablaClientes";
-            this.tablaClientes.RowCount = 2;
-            this.tablaClientes.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tablaClientes.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tablaClientes.Size = new System.Drawing.Size(597, 290);
-            this.tablaClientes.TabIndex = 16;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(94, 353);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 14;
             // 
             // nuevo
             // 
@@ -229,33 +215,54 @@
             this.eliminar.UseVisualStyleBackColor = true;
             this.eliminar.Click += new System.EventHandler(this.eliminar_Click);
             // 
-            // Form2
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(300, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 21;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // dgv_Buscar
+            // 
+            this.dgv_Buscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Buscar.Location = new System.Drawing.Point(12, 50);
+            this.dgv_Buscar.Name = "dgv_Buscar";
+            this.dgv_Buscar.ReadOnly = true;
+            this.dgv_Buscar.Size = new System.Drawing.Size(600, 286);
+            this.dgv_Buscar.TabIndex = 22;
+            // 
+            // GestionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 541);
+            this.Controls.Add(this.dgv_Buscar);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.eliminar);
             this.Controls.Add(this.guardar);
             this.Controls.Add(this.editar);
             this.Controls.Add(this.nuevo);
-            this.Controls.Add(this.tablaClientes);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.id);
-            this.Controls.Add(this.nombre);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.celular);
-            this.Controls.Add(this.telefono);
-            this.Controls.Add(this.documento);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtCelular);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.txt_Nombre);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "GestionCliente";
             this.Text = "Gestion de Cliente";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Buscar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,17 +277,18 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox documento;
-        private System.Windows.Forms.TextBox telefono;
-        private System.Windows.Forms.TextBox celular;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox nombre;
-        private System.Windows.Forms.TextBox id;
-        private System.Windows.Forms.TableLayoutPanel tablaClientes;
+        private System.Windows.Forms.TextBox txt_Nombre;
+        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtCelular;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button nuevo;
         private System.Windows.Forms.Button editar;
         private System.Windows.Forms.Button guardar;
         private System.Windows.Forms.Button eliminar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DataGridView dgv_Buscar;
     }
 }
