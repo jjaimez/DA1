@@ -9,3 +9,16 @@ C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegoci
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionArticulo.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe.config
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.pdb
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\MySql.Data.dll
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.AplicacionGui.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionCliente.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionArticulo.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.gestionProveedor.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Properties.Resources.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb

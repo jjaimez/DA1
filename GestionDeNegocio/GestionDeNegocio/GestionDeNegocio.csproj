@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,17 +46,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="AplicacionGui.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AplicacionGui.Designer.cs">
+      <DependentUpon>AplicacionGui.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Dat_User.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Dat_User.Designer.cs">
+      <DependentUpon>Dat_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCliente.Designer.cs">
+      <DependentUpon>GestionCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionArticulo.cs">
       <SubType>Form</SubType>
@@ -63,7 +70,6 @@
     <Compile Include="GestionArticulo.Designer.cs">
       <DependentUpon>GestionArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCliente.cs" />
     <Compile Include="gestionProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AplicacionGui.resx">
+      <DependentUpon>AplicacionGui.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="GestionCliente.resx">
+      <DependentUpon>GestionCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionArticulo.resx">
       <DependentUpon>GestionArticulo.cs</DependentUpon>
@@ -102,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -116,6 +123,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\cliente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\articuloo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\proveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\stock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

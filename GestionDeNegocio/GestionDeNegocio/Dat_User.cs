@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace GestionDeNegocio
 {
-    public partial class Login : Form
+    public partial class Dat_User : Form
     {
-        public Login()
+        public Dat_User()
         {
             InitializeComponent();
-        }
-
-        private void ingresar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AplicacionGui apli = new AplicacionGui();
-            apli.Show();
         }
     }
 }

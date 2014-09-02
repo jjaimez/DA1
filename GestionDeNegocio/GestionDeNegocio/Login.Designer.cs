@@ -76,6 +76,7 @@
             this.ingresar.TabIndex = 4;
             this.ingresar.Text = "ingresar";
             this.ingresar.UseVisualStyleBackColor = true;
+            this.ingresar.Click += new System.EventHandler(this.ingresar_Click);
             // 
             // Login
             // 
