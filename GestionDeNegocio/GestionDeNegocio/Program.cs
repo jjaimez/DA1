@@ -16,7 +16,7 @@ namespace GestionDeNegocio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GestionCliente());
+            Application.Run(new Login());
         }
     }
 }

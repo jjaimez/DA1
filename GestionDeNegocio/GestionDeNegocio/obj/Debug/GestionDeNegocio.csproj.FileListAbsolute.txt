@@ -22,3 +22,15 @@ C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.c
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.pdb
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.AplicacionGui.resources
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionCliente.resources
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionArticulo.resources
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.gestionProveedor.resources
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Properties.Resources.resources
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
