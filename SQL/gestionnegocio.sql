@@ -87,3 +87,10 @@ create table usuarios (
   nombre varchar(50) default 'gestionnegocio',
   pass varchar(50) default 'gestionnegocio',
   primary key(id));
+
+create table login (
+  `usuario` varchar(30) NOT NULL,
+  `pass` varchar(30) NOT NULL,
+  PRIMARY KEY (`usuario`));
+
+insert into login (usuario, pass) values ("gestionnegocio","gestionnegocio");
