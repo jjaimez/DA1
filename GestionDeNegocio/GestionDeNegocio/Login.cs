@@ -30,7 +30,7 @@ namespace GestionDeNegocio
 
             try
             {
-                cmd.CommandText = "select count(*) from login where usuario = '" + txtuser.Text + "' and pass = '" + txtpass.Text + "'";
+                cmd.CommandText = "select count(*) from login where nombre = '" + txtuser.Text + "' and pass = '" + txtpass.Text + "'";
                 int valor = int.Parse(cmd.ExecuteScalar().ToString());
 
                 if (valor == 1)

@@ -1,9 +1,7 @@
-C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe.config
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.pdb
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.AplicacionGui.resources
-C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Form2.resources
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Properties.Resources.resources
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
 C:\Users\Jacinto\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
@@ -34,3 +32,6 @@ C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeN
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Properties.Resources.resources
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
+C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionCliente.resources
+C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.gestionProveedor.resources
+C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
