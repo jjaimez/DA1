@@ -9,7 +9,7 @@ CREATE  TABLE `gestionnegocio`.`articulos` (
   `descripcion` VARCHAR(500) NULL ,
   `marca` VARCHAR(100) NULL ,
   `stock` INT NULL DEFAULT 0 ,
-  `stock_minimo` INT(11) NULL DEFAULT 0
+  `stock_minimo` INT(11) NULL DEFAULT 0,
   `precio_compra` FLOAT NULL DEFAULT 0 ,
   `precio_venta` FLOAT NULL DEFAULT 0 ,
   `proveedor_id` INT(9) NULL,
@@ -82,15 +82,10 @@ create table articulos_compras (
   check (precio_final>0),
     primary key(id));
 
-create table usuarios (
+create table login (
   id integer not null auto_increment,
   nombre varchar(50) default 'gestionnegocio',
   pass varchar(50) default 'gestionnegocio',
   primary key(id));
 
-create table login (
-  `usuario` varchar(30) NOT NULL,
-  `pass` varchar(30) NOT NULL,
-  PRIMARY KEY (`usuario`));
-
-insert into login (usuario, pass) values ("gestionnegocio","gestionnegocio");
+INSERT INTO `gestionnegocio`.`login`(`nombre`,`pass`) VALUES ('gestionnegocio','gestionnegocio');
