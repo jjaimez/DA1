@@ -70,12 +70,26 @@ namespace GestionDeNegocio
 
         private void proveedor_Click(object sender, EventArgs e)
         {
-
+            gestionProveedor proveedor = new gestionProveedor();
+            proveedor.Show();
         }
 
         private void venta_Click(object sender, EventArgs e)
         {
+            realizarVenta venta = new realizarVenta();
+            venta.Show();
+        }
 
+        private void compra_Click(object sender, EventArgs e)
+        {
+            realizarCompra compra = new realizarCompra();
+            compra.Show();
+        }
+
+        private void sinStock_Click(object sender, EventArgs e)
+        {
+            ArtsinStock sinstock = new ArtsinStock();
+            sinstock.Show();
         }
         
     }

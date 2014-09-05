@@ -86,6 +86,7 @@
             this.sinStock.Text = "Articulos sin stock";
             this.sinStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.sinStock.UseVisualStyleBackColor = true;
+            this.sinStock.Click += new System.EventHandler(this.sinStock_Click);
             // 
             // compra
             // 
@@ -99,6 +100,7 @@
             this.compra.Text = "Realizar Compra";
             this.compra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.compra.UseVisualStyleBackColor = true;
+            this.compra.Click += new System.EventHandler(this.compra_Click);
             // 
             // venta
             // 

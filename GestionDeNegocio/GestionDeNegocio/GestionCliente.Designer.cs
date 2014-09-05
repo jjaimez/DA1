@@ -46,8 +46,8 @@
             this.editar = new System.Windows.Forms.Button();
             this.guardar = new System.Windows.Forms.Button();
             this.eliminar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.dgv_Buscar = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Buscar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,16 +215,6 @@
             this.eliminar.UseVisualStyleBackColor = true;
             this.eliminar.Click += new System.EventHandler(this.eliminar_Click);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(300, 3);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 21;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // dgv_Buscar
             // 
             this.dgv_Buscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -233,6 +223,16 @@
             this.dgv_Buscar.ReadOnly = true;
             this.dgv_Buscar.Size = new System.Drawing.Size(600, 286);
             this.dgv_Buscar.TabIndex = 22;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Image = global::GestionDeNegocio.Properties.Resources.buscar;
+            this.btnBuscar.Location = new System.Drawing.Point(290, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(27, 23);
+            this.btnBuscar.TabIndex = 21;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // GestionCliente
             // 
