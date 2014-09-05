@@ -5,10 +5,10 @@ use gestionnegocio;
 
 CREATE  TABLE `gestionnegocio`.`articulos` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `codigo` VARCHAR(45) NOT NULL ,
+  `nombre` VARCHAR(45) NOT NULL ,
   `descripcion` VARCHAR(500) NULL ,
   `marca` VARCHAR(100) NULL ,
-  `stock` INT NULL DEFAULT 0 ,
+  `stock_actual` INT NULL DEFAULT 0 ,
   `stock_minimo` INT(11) NULL DEFAULT 0,
   `precio_compra` FLOAT NULL DEFAULT 0 ,
   `precio_venta` FLOAT NULL DEFAULT 0 ,
