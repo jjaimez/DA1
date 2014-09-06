@@ -12,51 +12,64 @@ namespace GestionDeNegocio
 {
     public partial class gestionProveedor : Form
     {
+        BDconexion bd = new BDconexion();
+
         public gestionProveedor()
         {
             InitializeComponent();
         }
 
-        private void nuevo_Click(object sender, EventArgs e)
+
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-            this.nombre.Text = "";
-            this.telefono.Text = "";
-            this.documento.Text = "";
-            this.email.Text = "";
-            this.celular.Text = "";
-            this.nombre.Enabled = true;
-            this.telefono.Enabled = true;
-            this.ciut.Enabled = true;
-            this.email.Enabled = true;
-            this.celular.Enabled = true;
-            this.guardar.Enabled = true;
+            if (txtNombre.Text == "" || txtCiut.Text == "" || txtTelefono.Text == "" || txtCelular.Text == "" || txtEmail.Text == "")
+            {
+                MessageBox.Show(" Rellene todos los campos", "Campos vacios", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                txtNombre.Focus();
+            }
+            else
+            {
+                try
+                {
+
+                    bd.insertarProveedor(txtNombre, txtCiut, txtTelefono, txtCelular, txtEmail);
+
+                    MessageBox.Show("Se insertaron correctamente los datos");
+                    this.txtNombre.Text = "";
+                    this.txtCiut.Text = "";
+                    this.txtTelefono.Text = "";
+                    this.txtCelular.Text = "";
+                    this.txtEmail.Text = "";
+                    this.txtNombre.Enabled = false;
+                    this.txtCiut.Enabled = false;
+                    this.txtTelefono.Enabled = false;
+                    this.txtCelular.Enabled = false;
+                    this.txtEmail.Enabled = false;
+                    this.btnGuardar.Enabled = false;
+
+                }
+                catch (Exception m)
+                {
+                    MessageBox.Show("No se pudieron insertar los datos");
+                }
+                bd.mostrarProveedores(dgv_Mostrar);
+            }
         }
 
-        private void guardar_Click(object sender, EventArgs e)
+        private void btnNuevo_Click(object sender, EventArgs e)
         {
-            /*gurdar en la base de datos*/
-            this.nombre.Text = "";
-            this.telefono.Text = "";
-            this.documento.Text = "";
-            this.email.Text = "";
-            this.celular.Text = "";
-            this.nombre.Enabled = false;
-            this.telefono.Enabled = false;
-            this.ciut.Enabled = false;
-            this.email.Enabled = false;
-            this.celular.Enabled = false;
-            this.guardar.Enabled = false;
-        }
+            this.txtNombre.Text = "";
+            this.txtTelefono.Text = "";
+            this.txtCiut.Text = "";
+            this.txtEmail.Text = "";
+            this.txtCelular.Text = "";
 
-        private void editar_Click(object sender, EventArgs e)
-        {
-            this.nuevo.Enabled = false;
-            this.nombre.Enabled = true;
-            this.telefono.Enabled = true;
-            this.documento.Enabled = true;
-            this.email.Enabled = true;
-            this.celular.Enabled = true;
-            this.guardar.Enabled = true;
+            this.txtCiut.Enabled = true;
+            this.txtNombre.Enabled = true;
+            this.txtTelefono.Enabled = true;
+            this.txtCelular.Enabled = true;
+            this.txtEmail.Enabled = true;
+            this.btnGuardar.Enabled = true;
         }
 
     

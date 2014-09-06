@@ -19,7 +19,6 @@ C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.P
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
-C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe

@@ -9,7 +9,7 @@ namespace GestionDeNegocio
 {
     class ClienteBD
     {
-        public static int Agregar(Cliente pCliente)
+        /*public static int Agregar(Cliente pCliente)
         {
 
             int retorno = 0;
@@ -44,6 +44,6 @@ namespace GestionDeNegocio
             }
 
             return _lista;
-        }
+        }*/
     }
 }
