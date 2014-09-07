@@ -42,16 +42,14 @@ namespace GestionDeNegocio
 
         private void modificarDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Dat_User datos_usuario = new Dat_User();
+            Mod_Dat_User datos_usuario = new Mod_Dat_User();
             datos_usuario.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Seguro que desea salir", "Sistema", MessageBoxButtons.YesNo))
-            {
-                this.Close();
-            }
+            Nuev_Dat_User datos_usuario = new Nuev_Dat_User();
+            datos_usuario.Show();
         }
 
         private void cliente_Click_1(object sender, EventArgs e)
@@ -90,6 +88,14 @@ namespace GestionDeNegocio
         {
             ArtsinStock sinstock = new ArtsinStock();
             sinstock.Show();
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Seguro que desea salir", "Sistema", MessageBoxButtons.YesNo))
+            {
+                this.Close();
+            }
         }
         
     }

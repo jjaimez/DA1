@@ -38,6 +38,7 @@
             this.articulo = new System.Windows.Forms.Button();
             this.proveedor = new System.Windows.Forms.Button();
             this.cliente = new System.Windows.Forms.Button();
+            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,8 @@
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.modificarDatosToolStripMenuItem,
-            this.salirToolStripMenuItem});
+            this.salirToolStripMenuItem,
+            this.salirToolStripMenuItem1});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
@@ -63,15 +65,15 @@
             // modificarDatosToolStripMenuItem
             // 
             this.modificarDatosToolStripMenuItem.Name = "modificarDatosToolStripMenuItem";
-            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.modificarDatosToolStripMenuItem.Text = "Modificar Datos del Usuario";
+            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.modificarDatosToolStripMenuItem.Text = "Modificar Usuario";
             this.modificarDatosToolStripMenuItem.Click += new System.EventHandler(this.modificarDatosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Text = "Crear Nuevo Usuario";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // sinStock
@@ -158,6 +160,13 @@
             this.cliente.UseVisualStyleBackColor = true;
             this.cliente.Click += new System.EventHandler(this.cliente_Click_1);
             // 
+            // salirToolStripMenuItem1
+            // 
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
+            this.salirToolStripMenuItem1.Text = "Salir ";
+            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
+            // 
             // AplicacionGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +202,7 @@
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
 
     }
 }

@@ -20,6 +20,30 @@ namespace GestionDeNegocio
         public MySqlConnection cnn = new MySqlConnection("Server=localhost;Uid=root;Pwd= root;Database=gestionnegocio;Port=3306");
         public MySqlCommand cmd = new MySqlCommand();
         public DataSet ds = new DataSet();
+
+        //----------------------------Crear un Nuevo Usuario en el Login-------------------------------
+        public int CrearCuentas(TextBox txt3, TextBox txt4)//string pUsuario, string pContraseña)
+        {
+            int resultado = 0;
+
+            //MySqlConnection cn = new MySqlConnection("Server = localhost; Uid = root; Password = root; Database = gestionnegocio; Port = 3306");
+            cmd = new MySqlCommand(string.Format("insert into login (nombre, pass) values ('{0}',('{1}'))", txt3, txt4), cnn);
+            cnn.Open();
+
+            resultado = cmd.ExecuteNonQuery();
+
+            cnn.Close();
+
+            return resultado;
+
+
+            /*cnn.Open();
+            cmd.CommandText = "Insert into clientes(nombre,telefono,celular,email, documento)values('" + txt3.Text + "','" + txt4.Text + "','" + txt5.Text + "','" + txt6.Text + "','" + txt7.Text + "')";
+            cmd.Connection = cnn;
+            cmd.ExecuteNonQuery();
+            cnn.Close();*/
+
+        }
         
         //----------------------------Mostrar los datos del cliente------------------------------------
 
