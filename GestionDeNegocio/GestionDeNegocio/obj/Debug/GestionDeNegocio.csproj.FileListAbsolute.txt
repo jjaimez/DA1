@@ -34,3 +34,4 @@ C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegoci
 C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.gestionProveedor.resources
 C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Nuev_Dat_User.resources
+C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache

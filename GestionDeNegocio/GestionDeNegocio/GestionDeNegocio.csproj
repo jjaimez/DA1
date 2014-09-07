@@ -138,6 +138,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="realizarCompra.resx">
+      <DependentUpon>realizarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="realizarVenta.resx">
+      <DependentUpon>realizarVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
