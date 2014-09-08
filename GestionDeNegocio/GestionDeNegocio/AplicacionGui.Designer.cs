@@ -32,13 +32,13 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sinStock = new System.Windows.Forms.Button();
+            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exExcel = new System.Windows.Forms.Button();
             this.compra = new System.Windows.Forms.Button();
             this.venta = new System.Windows.Forms.Button();
             this.articulo = new System.Windows.Forms.Button();
             this.proveedor = new System.Windows.Forms.Button();
             this.cliente = new System.Windows.Forms.Button();
-            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,23 +72,30 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.salirToolStripMenuItem.Text = "Crear Nuevo Usuario";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // sinStock
+            // salirToolStripMenuItem1
             // 
-            this.sinStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sinStock.Image = global::GestionDeNegocio.Properties.Resources.stock;
-            this.sinStock.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.sinStock.Location = new System.Drawing.Point(12, 507);
-            this.sinStock.Name = "sinStock";
-            this.sinStock.Size = new System.Drawing.Size(106, 88);
-            this.sinStock.TabIndex = 12;
-            this.sinStock.Text = "Articulos sin stock";
-            this.sinStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.sinStock.UseVisualStyleBackColor = true;
-            this.sinStock.Click += new System.EventHandler(this.sinStock_Click);
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
+            this.salirToolStripMenuItem1.Text = "Salir ";
+            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
+            // 
+            // exExcel
+            // 
+            this.exExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exExcel.Image = global::GestionDeNegocio.Properties.Resources.stock;
+            this.exExcel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.exExcel.Location = new System.Drawing.Point(12, 507);
+            this.exExcel.Name = "exExcel";
+            this.exExcel.Size = new System.Drawing.Size(106, 88);
+            this.exExcel.TabIndex = 12;
+            this.exExcel.Text = "Exportar e Importar Excel";
+            this.exExcel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.exExcel.UseVisualStyleBackColor = true;
+            this.exExcel.Click += new System.EventHandler(this.sinStock_Click);
             // 
             // compra
             // 
@@ -160,20 +167,13 @@
             this.cliente.UseVisualStyleBackColor = true;
             this.cliente.Click += new System.EventHandler(this.cliente_Click_1);
             // 
-            // salirToolStripMenuItem1
-            // 
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(183, 22);
-            this.salirToolStripMenuItem1.Text = "Salir ";
-            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
-            // 
             // AplicacionGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(801, 603);
-            this.Controls.Add(this.sinStock);
+            this.Controls.Add(this.exExcel);
             this.Controls.Add(this.compra);
             this.Controls.Add(this.venta);
             this.Controls.Add(this.articulo);
@@ -192,7 +192,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button sinStock;
+        private System.Windows.Forms.Button exExcel;
         private System.Windows.Forms.Button compra;
         private System.Windows.Forms.Button venta;
         private System.Windows.Forms.Button articulo;

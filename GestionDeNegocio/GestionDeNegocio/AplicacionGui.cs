@@ -86,8 +86,8 @@ namespace GestionDeNegocio
 
         private void sinStock_Click(object sender, EventArgs e)
         {
-            ArtsinStock sinstock = new ArtsinStock();
-            sinstock.Show();
+            ExporImporExcel excel = new ExporImporExcel();
+            excel.Show();
         }
 
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)

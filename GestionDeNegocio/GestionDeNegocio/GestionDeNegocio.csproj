@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArtsinStock.cs">
+    <Compile Include="ExporImporExcel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ArtsinStock.Designer.cs">
-      <DependentUpon>ArtsinStock.cs</DependentUpon>
+    <Compile Include="ExporImporExcel.Designer.cs">
+      <DependentUpon>ExporImporExcel.cs</DependentUpon>
     </Compile>
     <Compile Include="BDconexion.cs" />
     <Compile Include="AplicacionGui.cs">
@@ -112,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="AplicacionGui.resx">
       <DependentUpon>AplicacionGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExporImporExcel.resx">
+      <DependentUpon>ExporImporExcel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCliente.resx">
       <DependentUpon>GestionCliente.cs</DependentUpon>
