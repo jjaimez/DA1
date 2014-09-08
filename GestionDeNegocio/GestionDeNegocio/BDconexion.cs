@@ -17,6 +17,8 @@ namespace GestionDeNegocio
 {
     public class BDconexion
     {
+
+        
         public MySqlConnection cnn = new MySqlConnection("Server=localhost;Uid=root;Pwd= root;Database=gestionnegocio;Port=3306");
         public MySqlCommand cmd = new MySqlCommand();
         public DataSet ds = new DataSet();

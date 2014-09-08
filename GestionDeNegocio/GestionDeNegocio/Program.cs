@@ -16,7 +16,7 @@ namespace GestionDeNegocio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ExporImporExcel());
+            Application.Run(new Login());
         }
     }
 }

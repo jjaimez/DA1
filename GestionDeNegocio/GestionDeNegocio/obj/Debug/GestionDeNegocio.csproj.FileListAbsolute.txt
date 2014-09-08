@@ -35,8 +35,10 @@ C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegoci
 C:\Users\Jacinto\da1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Nuev_Dat_User.resources
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
-C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Nuev_Dat_User.resources
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarCompra.resources
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarVenta.resources
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.ExporImporExcel.resources
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.ResolveComReference.cache
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\ExcelLibrary.dll
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\Interop.ExcelClientPkgLib.dll
