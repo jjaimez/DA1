@@ -75,91 +75,11 @@ namespace GestionDeNegocio
                     MessageBox.Show(ex.Message);
                 }
             }
-            if (cbExport.SelectedItem == "clientes")
+            else
             {
-                MySqlCommand cmdDataBase = new MySqlCommand("select * from clientes ;", bd.cnn);
-
-                try
-                {
-                    MySqlDataAdapter sda = new MySqlDataAdapter();
-                    sda.SelectCommand = cmdDataBase;
-                    DataTable dbdataset = new DataTable();
-                    sda.Fill(dbdataset);
-                    BindingSource bSource = new BindingSource();
-
-                    bSource.DataSource = dbdataset;
-                    dataGridView1.DataSource = bSource;
-                }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                MessageBox.Show("Seleccione el Item", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
-            if (cbExport.SelectedItem == "compras")
-            {
-                MySqlCommand cmdDataBase = new MySqlCommand("select * from compras ;", bd.cnn);
-
-                try
-                {
-                    MySqlDataAdapter sda = new MySqlDataAdapter();
-                    sda.SelectCommand = cmdDataBase;
-                    DataTable dbdataset = new DataTable();
-                    sda.Fill(dbdataset);
-                    BindingSource bSource = new BindingSource();
-
-                    bSource.DataSource = dbdataset;
-                    dataGridView1.DataSource = bSource;
-                }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            if (cbExport.SelectedItem == "proveedors")
-            {
-                MySqlCommand cmdDataBase = new MySqlCommand("select * from proveedors ;", bd.cnn);
-
-                try
-                {
-                    MySqlDataAdapter sda = new MySqlDataAdapter();
-                    sda.SelectCommand = cmdDataBase;
-                    DataTable dbdataset = new DataTable();
-                    sda.Fill(dbdataset);
-                    BindingSource bSource = new BindingSource();
-
-                    bSource.DataSource = dbdataset;
-                    dataGridView1.DataSource = bSource;
-                }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-
-            if (cbExport.SelectedItem == "ventas")
-            {
-                MySqlCommand cmdDataBase = new MySqlCommand("select * from ventas ;", bd.cnn);
-
-                try
-                {
-                    MySqlDataAdapter sda = new MySqlDataAdapter();
-                    sda.SelectCommand = cmdDataBase;
-                    DataTable dbdataset = new DataTable();
-                    sda.Fill(dbdataset);
-                    BindingSource bSource = new BindingSource();
-
-                    bSource.DataSource = dbdataset;
-                    dataGridView1.DataSource = bSource;
-                }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
+            
             
         }
 

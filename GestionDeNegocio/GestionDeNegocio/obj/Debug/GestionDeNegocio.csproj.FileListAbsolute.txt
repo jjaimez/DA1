@@ -42,3 +42,4 @@ C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.E
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.ResolveComReference.cache
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\ExcelLibrary.dll
 C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\Interop.ExcelClientPkgLib.dll
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache

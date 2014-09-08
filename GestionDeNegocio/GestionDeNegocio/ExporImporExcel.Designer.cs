@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_ver = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_ver = new System.Windows.Forms.Button();
             this.btnExportar = new System.Windows.Forms.Button();
+            this.cbExport = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnImport = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbExport = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
@@ -61,16 +61,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "EXPORTAR E IMPORTAR DATOS EN EXCEL ";
             // 
-            // btn_ver
-            // 
-            this.btn_ver.Location = new System.Drawing.Point(21, 101);
-            this.btn_ver.Name = "btn_ver";
-            this.btn_ver.Size = new System.Drawing.Size(75, 23);
-            this.btn_ver.TabIndex = 11;
-            this.btn_ver.Text = "Ver Tabla";
-            this.btn_ver.UseVisualStyleBackColor = true;
-            this.btn_ver.Click += new System.EventHandler(this.btn_ver_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btn_ver);
@@ -84,6 +74,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Exportar Excel";
             // 
+            // btn_ver
+            // 
+            this.btn_ver.Location = new System.Drawing.Point(21, 101);
+            this.btn_ver.Name = "btn_ver";
+            this.btn_ver.Size = new System.Drawing.Size(75, 23);
+            this.btn_ver.TabIndex = 11;
+            this.btn_ver.Text = "Ver Tabla";
+            this.btn_ver.UseVisualStyleBackColor = true;
+            this.btn_ver.Click += new System.EventHandler(this.btn_ver_Click);
+            // 
             // btnExportar
             // 
             this.btnExportar.Location = new System.Drawing.Point(216, 101);
@@ -93,6 +93,26 @@
             this.btnExportar.Text = "Exportar";
             this.btnExportar.UseVisualStyleBackColor = true;
             this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
+            // cbExport
+            // 
+            this.cbExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbExport.FormattingEnabled = true;
+            this.cbExport.Items.AddRange(new object[] {
+            "articulos"});
+            this.cbExport.Location = new System.Drawing.Point(83, 49);
+            this.cbExport.Name = "cbExport";
+            this.cbExport.Size = new System.Drawing.Size(195, 21);
+            this.cbExport.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(260, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Seleccione la Categoria que desea Exportar:";
             // 
             // groupBox2
             // 
@@ -150,30 +170,6 @@
             this.btnImport.Text = "Importar";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Seleccione la Categoria que desea Exportar:";
-            // 
-            // cbExport
-            // 
-            this.cbExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbExport.FormattingEnabled = true;
-            this.cbExport.Items.AddRange(new object[] {
-            "articulos",
-            "clientes",
-            "compras",
-            "proveedors",
-            "ventas"});
-            this.cbExport.Location = new System.Drawing.Point(83, 49);
-            this.cbExport.Name = "cbExport";
-            this.cbExport.Size = new System.Drawing.Size(195, 21);
-            this.cbExport.TabIndex = 3;
             // 
             // dataGridView1
             // 
