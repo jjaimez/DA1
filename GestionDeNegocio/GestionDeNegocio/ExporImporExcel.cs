@@ -22,17 +22,23 @@ namespace GestionDeNegocio
 
         private void btnImport_Click(object sender, EventArgs e)
         {
+            //if (textBox1.Text == "" || textBox2.Text == "")
+            //{
+            //   MessageBox.Show(" Rellene todos los campos", "Campos vacios", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //  textBox1.Focus();
+            //}
+            //else
+            //{
 
-        }
-
-        private void btnImport_Click_1(object sender, EventArgs e)
-        {
-            string constr = "Provider = Microsoft.Jet.OLEDB.4.0; Data Source= " + textBox1.Text + "; Extended Properties =\"Excel 8.0; HDR=yes;\";";
+            //}
+            string constr = "Provider = Microsoft.Jet.OLEDB.4.0; Data Source= " + textBox1.Text + "; Extended Properties =\"Excel 8.0; HDR=Yes;\";";
             OleDbConnection con = new OleDbConnection(constr);
-            OleDbDataAdapter sda = new OleDbDataAdapter("Select * From [" + textBox2.Text + "$]", con);
+            OleDbDataAdapter sda = new OleDbDataAdapter("Select * From [" + textBox2.Text + "$]",con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+       
     }
 }
