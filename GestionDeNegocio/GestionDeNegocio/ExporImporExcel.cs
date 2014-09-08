@@ -7,11 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//-------------------------
-
-using Excel = Microsoft.Office.Interop.Excel;
-
-//-------------------------
 using System.Reflection;
 using System.IO;
 using System.Data.OleDb;
@@ -28,6 +23,16 @@ namespace GestionDeNegocio
         private void btnImport_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnImport_Click_1(object sender, EventArgs e)
+        {
+            string constr = "Provider = Microsoft.Jet.OLEDB.4.0; Data Source= " + textBox1.Text + "; Extended Properties =\"Excel 8.0; HDR=yes;\";";
+            OleDbConnection con = new OleDbConnection(constr);
+            OleDbDataAdapter sda = new OleDbDataAdapter("Select * From [" + textBox2.Text + "$]", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }
