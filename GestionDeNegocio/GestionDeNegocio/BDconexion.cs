@@ -18,10 +18,13 @@ namespace GestionDeNegocio
     public class BDconexion
     {
 
-        
+
         public MySqlConnection cnn = new MySqlConnection("Server=localhost;Uid=root;Pwd= root;Database=gestionnegocio;Port=3306");
         public MySqlCommand cmd = new MySqlCommand();
         public DataSet ds = new DataSet();
+        DataTable dt;
+        MySqlDataAdapter da;
+        MySqlDataReader dr;
 
         //----------------------------Crear un Nuevo Usuario en el Login-------------------------------
         public int CrearCuentas(TextBox txt3, TextBox txt4)//string pUsuario, string pContraseña)
@@ -46,16 +49,25 @@ namespace GestionDeNegocio
             cnn.Close();*/
 
         }
-        
+
         //----------------------------Mostrar los datos del cliente------------------------------------
 
         public void mostrarClientes(DataGridView dv)
         {
-            cnn.Open();
-            MySqlDataAdapter da = new MySqlDataAdapter("Select id as id,nombre as nombre,telefono as telefono,celular as celular,email as email, documento as documento from clientes", cnn);
-            da.Fill(ds, "Clientes");
-            dv.DataSource = ds.Tables[0];
-            cnn.Close();
+            try
+            {
+                //cnn.Open();
+                //MySqlDataAdapter da = new MySqlDataAdapter("Select id as id,nombre as nombre,telefono as telefono,celular as celular,email as email, documento as documento from clientes", cnn);
+                da = new MySqlDataAdapter("Select id as id,nombre as nombre,telefono as telefono,celular as celular,email as email, documento as documento from clientes", cnn);
+                dt = new DataTable();
+                da.Fill(dt);//, "Clientes");
+                dv.DataSource = dt;//.Tables[0];
+                //cnn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("no");
+            }
         }
 
         //----------------------------Mostrar los datos del Proveedor ------------------------------------
@@ -73,7 +85,7 @@ namespace GestionDeNegocio
 
         public void mostrarArticulo(DataGridView dv)
         {
-            
+
         }
         //------------------------Datos del Cliente---------------------------------------
 
@@ -115,8 +127,13 @@ namespace GestionDeNegocio
 
         public void insertarArticulo(TextBox txt1, TextBox txt2, TextBox txt3, ComboBox txt4, TextBox txt5, TextBox txt6, TextBox txt7, TextBox txt8, TextBox txt9)
         {
-            
+
         }
-        //--------------------------------------------------------------
+        //----------------------------Buscar cliente----------------------------------
+
+
+     
+
+      
     }
 }
