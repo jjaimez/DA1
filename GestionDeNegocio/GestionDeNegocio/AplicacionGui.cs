@@ -42,14 +42,13 @@ namespace GestionDeNegocio
 
         private void modificarDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Mod_Dat_User datos_usuario = new Mod_Dat_User();
+            GestionUsuario datos_usuario = new GestionUsuario();
             datos_usuario.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Nuev_Dat_User datos_usuario = new Nuev_Dat_User();
-            datos_usuario.Show();
+            this.Close();
         }
 
         private void cliente_Click_1(object sender, EventArgs e)
