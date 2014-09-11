@@ -19,13 +19,11 @@ namespace GestionDeNegocio
     {
 
         BDconexion bd = new BDconexion();
-        string consulta;
-        DataTable dat;
-        MySqlCommand query;
+        
 
         public GestionCliente()
         {
-            consulta = "";
+            
             InitializeComponent();
         }
 
@@ -49,13 +47,13 @@ namespace GestionDeNegocio
                     this.txtTelefono.Text = "";
                     this.txtDocumento.Text = "";
                     this.txtEmail.Text = "";
-                    this.txtCelular.Text = "";
+                    this.txtCelular.Text = "";/*
                     this.txtNombre.Enabled = false;
                     this.txtTelefono.Enabled = false;
                     this.txtDocumento.Enabled = false;
                     this.txtEmail.Enabled = false;
                     this.txtCelular.Enabled = false;
-                    this.btnGuardar.Enabled = false;
+                    this.btnGuardar.Enabled = false;*/
                     
 
                 }
@@ -77,21 +75,11 @@ namespace GestionDeNegocio
             this.txtDocumento.Text = "";
             this.txtEmail.Text = "";
             this.txtCelular.Text = "";
-            /*this.txtId.Enabled = true;
-            this.txtNombre.Enabled = true;
-            this.txtTelefono.Enabled = true;
-            this.txtDocumento.Enabled = true;
-            this.txtEmail.Enabled = true;
-            this.txtCelular.Enabled = true;*/
+           
             this.btnGuardar.Enabled = true;
         }
 
-        private void btnBuscar_Click_1(object sender, EventArgs e)
-        {
-            /*DataView DV = new DataView(dat);
-            DV.RowFilter = string.Format("select * from clientes where nombre like('"+txt_Buscar.Text+"%')");
-            dgv_Mostrar.DataSource = DV;*/
-        }
+        
 
         private void GestionCliente_Load(object sender, EventArgs e)
         {
@@ -121,7 +109,7 @@ namespace GestionDeNegocio
             try
             {
                 //realizamos la consulta de actualizar en el q se toma desde el ID ingresado por el texboxId y despues que se modifique se actualiza los datos 
-                string Query = "update clientes set id='" + this.txtId.Text + "',Nombre='" + this.txtNombre.Text
+                string Query = "update clientes set id='" + this.txtId.Text + "',nombre='" + this.txtNombre.Text
                     + "',documento='" + this.txtDocumento.Text
                     + "',telefono='" + this.txtTelefono.Text
                     + "',celular='" + this.txtCelular.Text
@@ -168,6 +156,11 @@ namespace GestionDeNegocio
             da.Fill(dt);
             dgv_Mostrar.DataSource = dt;
             bd.cnn.Close();
+        }
+
+        private void txt_Buscar_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
       

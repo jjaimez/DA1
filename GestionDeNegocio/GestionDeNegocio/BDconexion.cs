@@ -24,14 +24,12 @@ namespace GestionDeNegocio
         public DataSet ds = new DataSet();
         DataTable dt;
         MySqlDataAdapter da;
-        MySqlDataReader dr;
+        //MySqlDataReader dr;
 
         //----------------------------Crear un Nuevo Usuario en el Login-------------------------------
         public int CrearCuentas(TextBox txt3, TextBox txt4)//string pUsuario, string pContraseña)
         {
             int resultado = 0;
-
-            //MySqlConnection cn = new MySqlConnection("Server = localhost; Uid = root; Password = root; Database = gestionnegocio; Port = 3306");
             cmd = new MySqlCommand(string.Format("insert into login (nombre, pass) values ('{0}',('{1}'))", txt3, txt4), cnn);
             cnn.Open();
 
@@ -41,13 +39,6 @@ namespace GestionDeNegocio
 
             return resultado;
 
-
-            /*cnn.Open();
-            cmd.CommandText = "Insert into clientes(nombre,telefono,celular,email, documento)values('" + txt3.Text + "','" + txt4.Text + "','" + txt5.Text + "','" + txt6.Text + "','" + txt7.Text + "')";
-            cmd.Connection = cnn;
-            cmd.ExecuteNonQuery();
-            cnn.Close();*/
-
         }
 
         //----------------------------Mostrar los datos del cliente------------------------------------
@@ -56,17 +47,14 @@ namespace GestionDeNegocio
         {
             try
             {
-                //cnn.Open();
-                //MySqlDataAdapter da = new MySqlDataAdapter("Select id as id,nombre as nombre,telefono as telefono,celular as celular,email as email, documento as documento from clientes", cnn);
                 da = new MySqlDataAdapter("Select id as id,nombre as nombre,telefono as telefono,celular as celular,email as email, documento as documento from clientes", cnn);
                 dt = new DataTable();
-                da.Fill(dt);//, "Clientes");
-                dv.DataSource = dt;//.Tables[0];
-                //cnn.Close();
+                da.Fill(dt);//
+                dv.DataSource = dt;//
             }
             catch(Exception ex)
             {
-                MessageBox.Show("no");
+                MessageBox.Show("no datos cliente");
             }
         }
 
@@ -74,11 +62,19 @@ namespace GestionDeNegocio
 
         public void mostrarProveedores(DataGridView dv)
         {
-            cnn.Open();
-            MySqlDataAdapter da = new MySqlDataAdapter("Select id as id,nombre as nombre,cuit as cuit,telefono as telefono,celular as celular, email as email from proveedors", cnn);
-            da.Fill(ds, "Proveedores");
-            dv.DataSource = ds.Tables[0];
-            cnn.Close();
+            try
+            {
+                da = new MySqlDataAdapter("Select id as id,nombre as nombre,cuit as cuit,telefono as telefono,celular as celular, email as email from proveedors", cnn);
+                dt = new DataTable();
+                da.Fill(dt);//
+                dv.DataSource = dt;//
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no datos Proveedor");
+            }
+
+            
         }
 
         //----------------------------Mostrar los datos del Articulo ------------------------------------
