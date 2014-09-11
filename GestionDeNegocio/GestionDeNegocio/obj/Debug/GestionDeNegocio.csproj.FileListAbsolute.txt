@@ -61,3 +61,4 @@ C:\Users\Usuario\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\Gestion
 C:\Users\Usuario\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
 C:\Users\Usuario\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.pdb
 C:\Users\Usuario\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Home\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache

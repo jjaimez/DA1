@@ -14,7 +14,8 @@ namespace GestionDeNegocio
 {
     public partial class Login : Form
     {
-        MySqlConnection cn = new MySqlConnection("server=127.0.0.1; database=gestionnegocio; Uid=root; pwd=root;");
+        BDconexion bd = new BDconexion();
+        
         MySqlCommand cmd = new MySqlCommand();
 
         public Login()
@@ -25,8 +26,8 @@ namespace GestionDeNegocio
         private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            cn.Open();
-            cmd.Connection = cn;
+            bd.cnn.Open();
+            cmd.Connection = bd.cnn;
 
             try
             {
@@ -49,7 +50,7 @@ namespace GestionDeNegocio
             {
                 lblmensaje.Text = "Error Siguiente" + ex;
             }
-            cn.Close();
+            bd.cnn.Close();
 
         }
 

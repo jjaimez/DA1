@@ -43,11 +43,7 @@ namespace GestionDeNegocio
                     bd.insertarCliente(txtNombre, txtDocumento, txtTelefono, txtCelular, txtEmail);
                     bd.mostrarClientes(dgv_Mostrar);
                     MessageBox.Show("Se insertaron correctamente los datos");
-                    this.txtNombre.Text = "";
-                    this.txtTelefono.Text = "";
-                    this.txtDocumento.Text = "";
-                    this.txtEmail.Text = "";
-                    this.txtCelular.Text = "";/*
+                    /*
                     this.txtNombre.Enabled = false;
                     this.txtTelefono.Enabled = false;
                     this.txtDocumento.Enabled = false;
@@ -63,6 +59,11 @@ namespace GestionDeNegocio
                     MessageBox.Show("No se pudieron insertar los datos");
                 }
                 //Application.Restart();
+                this.txtNombre.Text = "";
+                this.txtTelefono.Text = "";
+                this.txtDocumento.Text = "";
+                this.txtEmail.Text = "";
+                this.txtCelular.Text = "";
                 
             }
         }
