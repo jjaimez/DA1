@@ -279,6 +279,7 @@
             this.txt_Buscar.Name = "txt_Buscar";
             this.txt_Buscar.Size = new System.Drawing.Size(247, 23);
             this.txt_Buscar.TabIndex = 24;
+            this.txt_Buscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Buscar_KeyUp);
             // 
             // label1
             // 

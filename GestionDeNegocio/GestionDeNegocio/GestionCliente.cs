@@ -88,7 +88,9 @@ namespace GestionDeNegocio
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-           
+            /*DataView DV = new DataView(dat);
+            DV.RowFilter = string.Format("select * from clientes where nombre like('"+txt_Buscar.Text+"%')");
+            dgv_Mostrar.DataSource = DV;*/
         }
 
         private void GestionCliente_Load(object sender, EventArgs e)
@@ -152,6 +154,20 @@ namespace GestionDeNegocio
             txtTelefono.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtCelular.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtEmail.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[5].Value.ToString();
+        }
+
+        private void txt_Buscar_KeyUp(object sender, KeyEventArgs e)
+        {
+            bd.cnn.Open();
+            MySqlCommand cmd = bd.cnn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from clientes where nombre like('" + txt_Buscar.Text + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dgv_Mostrar.DataSource = dt;
+            bd.cnn.Close();
         }
 
       
