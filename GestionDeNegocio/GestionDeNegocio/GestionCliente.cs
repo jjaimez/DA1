@@ -77,12 +77,12 @@ namespace GestionDeNegocio
             this.txtDocumento.Text = "";
             this.txtEmail.Text = "";
             this.txtCelular.Text = "";
-            this.txtId.Enabled = true;
+            /*this.txtId.Enabled = true;
             this.txtNombre.Enabled = true;
             this.txtTelefono.Enabled = true;
             this.txtDocumento.Enabled = true;
             this.txtEmail.Enabled = true;
-            this.txtCelular.Enabled = true;
+            this.txtCelular.Enabled = true;*/
             this.btnGuardar.Enabled = true;
         }
 
@@ -116,15 +116,30 @@ namespace GestionDeNegocio
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            query = new MySqlCommand("update clientes set nombre=" + txtNombre.Text
-                + ", documento=\"" + txtDocumento.Text
-                + "\", telefono=\"" + txtTelefono.Text
-                + "\", celular=\"" + txtCelular.Text
-                + "\", email=\"" + txtEmail.Text
-                + "\" where cli=" + dgv_Mostrar.Rows[dgv_Mostrar.SelectedRows[0].Index].Cells[0].Value.ToString(), bd.cnn);
-                query.ExecuteNonQuery();
-                bd.mostrarClientes(dgv_Mostrar);
-            
+            try
+            {
+                //realizamos la consulta de actualizar en el q se toma desde el ID ingresado por el texboxId y despues que se modifique se actualiza los datos 
+                string Query = "update clientes set id='" + this.txtId.Text + "',Nombre='" + this.txtNombre.Text
+                    + "',documento='" + this.txtDocumento.Text
+                    + "',telefono='" + this.txtTelefono.Text
+                    + "',celular='" + this.txtCelular.Text
+                    + "',email='" + this.txtEmail.Text
+                    + "' where id='" + this.txtId.Text + "';";
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, bd.cnn);
+                MySqlDataReader MyReader2;
+                bd.cnn.Open();
+                MyReader2 = MyCommand2.ExecuteReader();
+                MessageBox.Show("Registro modificado");
+                while (MyReader2.Read())
+                {
+                }
+                bd.cnn.Close();//
+                bd.mostrarClientes(dgv_Mostrar);//actualiza el datagridview
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         
         private void dgv_Mostrar_RowEnter(object sender, DataGridViewCellEventArgs e)
