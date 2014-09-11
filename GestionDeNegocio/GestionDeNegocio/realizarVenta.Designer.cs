@@ -32,7 +32,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.cbAbona = new System.Windows.Forms.CheckBox();
             this.btnBorrarArtSel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.TextBox();
@@ -91,16 +90,6 @@
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 28;
             this.label8.Text = "Total";
-            // 
-            // cbAbona
-            // 
-            this.cbAbona.AutoSize = true;
-            this.cbAbona.Location = new System.Drawing.Point(554, 299);
-            this.cbAbona.Name = "cbAbona";
-            this.cbAbona.Size = new System.Drawing.Size(57, 17);
-            this.cbAbona.TabIndex = 27;
-            this.cbAbona.Text = "Abona";
-            this.cbAbona.UseVisualStyleBackColor = true;
             // 
             // btnBorrarArtSel
             // 
@@ -267,7 +256,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.cbAbona);
             this.Controls.Add(this.btnBorrarArtSel);
             this.Name = "realizarVenta";
             this.Text = "Registro Venta";
@@ -291,7 +279,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox cbAbona;
         private System.Windows.Forms.Button btnBorrarArtSel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtFecha;
