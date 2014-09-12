@@ -30,7 +30,7 @@ namespace GestionDeNegocio
         public int CrearCuentas(TextBox txt3, TextBox txt4)//string pUsuario, string pContraseña)
         {
             int resultado = 0;
-            cmd = new MySqlCommand(string.Format("insert into login (nombre, pass) values ('{0}',('{1}'))", txt3, txt4), cnn);
+            cmd = new MySqlCommand(string.Format("insert into login (nombre, pass) values ('{0}',('{1}'))", txt3.Text, txt4.Text), cnn);
             cnn.Open();
 
             resultado = cmd.ExecuteNonQuery();
