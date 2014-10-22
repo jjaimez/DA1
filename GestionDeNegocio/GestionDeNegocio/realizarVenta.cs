@@ -43,12 +43,10 @@ namespace GestionDeNegocio
 
         private void dvgTblClientes_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            /*txtId.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtNombre.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtDocumento.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtTelefono.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtCelular.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtEmail.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[5].Value.ToString();*/
+            txtId.Text = dvgTblClientes.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtCliente.Text = dvgTblClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtDocumento.Text = dvgTblClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
+            /**/
         }
 
         private void realizarVenta_Load(object sender, EventArgs e)
@@ -60,7 +58,9 @@ namespace GestionDeNegocio
 
         private void dataGridView2_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-
+            txtNombre.Text = dvgTblArticulos.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtMarca.Text = dvgTblArticulos.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtDescripcion.Text = dvgTblArticulos.Rows[e.RowIndex].Cells[2].Value.ToString();
         }
 
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
@@ -76,5 +76,7 @@ namespace GestionDeNegocio
             dvgTblArticulos.DataSource = dt;
             bd.cnn.Close();
         }
+
+        
     }
 }
