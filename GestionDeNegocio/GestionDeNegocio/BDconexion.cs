@@ -148,5 +148,9 @@ namespace GestionDeNegocio
             }
         }
 
+        //------------------------Datos del Articulo---------------------------------------
+
+        
+
     }
 }

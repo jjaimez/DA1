@@ -73,7 +73,35 @@ namespace GestionDeNegocio
         private void GestionArticulo_Load(object sender, EventArgs e)
         {
             bd.mostrarArticulos(dgv_Mostrar);
+
+            try
+            {
+                bd.cnn.Open();
+
+                MySqlCommand cn = new MySqlCommand("SELECT id FROM proveedors ORDER BY id ASC", bd.cnn);
+
+                try
+                {
+                    MySqlDataReader dr = cn.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        cbProveedor.Items.Add(dr["id"]);
+                    }
+                    dr.Close();
+                    dr.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -169,6 +197,11 @@ namespace GestionDeNegocio
                 this.txtPrecioVenta.Text = "";
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
