@@ -58,6 +58,23 @@ namespace GestionDeNegocio
             }
         }
 
+        //----------------------------Mostrar los datos del cliente realizarVenta------------------------------------
+
+        public void mostrarClientes2(DataGridView dv)
+        {
+            try
+            {
+                da = new MySqlDataAdapter("Select id as id,nombre as nombre,documento as documento from clientes", cnn);
+                dt = new DataTable();
+                da.Fill(dt);//
+                dv.DataSource = dt;//
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no datos cliente");
+            }
+        }
+
         //----------------------------Mostrar los datos del Proveedor ------------------------------------
 
         public void mostrarProveedores(DataGridView dv)
@@ -84,6 +101,24 @@ namespace GestionDeNegocio
             try
             {
                 da = new MySqlDataAdapter("Select id as id,nombre as nombre,marca as marca,proveedor_id as proveedor_id,descripcion as descripcion, stock_actual as stock_actual, stock_minimo as stock_minimo, precio_compra as precio_compra, precio_venta as precio_venta from articulos", cnn);
+
+                dt = new DataTable();
+                da.Fill(dt);//
+                dv.DataSource = dt;//
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no datos Proveedor");
+            }
+        }
+
+        //----------------------------Mostrar los datos del Articulo Realizar Venta ------------------------------------
+
+        public void mostrarArticulos2(DataGridView dv)
+        {
+            try
+            {
+                da = new MySqlDataAdapter("Select id as id,nombre as nombre,marca as marca,descripcion as descripcion from articulos", cnn);
 
                 dt = new DataTable();
                 da.Fill(dt);//

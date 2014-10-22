@@ -30,9 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
-            this.txtFram = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Fram = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvCompra = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,28 +71,12 @@
             this.txtNom.Size = new System.Drawing.Size(184, 20);
             this.txtNom.TabIndex = 2;
             // 
-            // txtFram
-            // 
-            this.txtFram.Location = new System.Drawing.Point(56, 47);
-            this.txtFram.Name = "txtFram";
-            this.txtFram.Size = new System.Drawing.Size(198, 20);
-            this.txtFram.TabIndex = 3;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(56, 19);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(198, 20);
             this.textBox1.TabIndex = 2;
-            // 
-            // Fram
-            // 
-            this.Fram.AutoSize = true;
-            this.Fram.Location = new System.Drawing.Point(10, 50);
-            this.Fram.Name = "Fram";
-            this.Fram.Size = new System.Drawing.Size(30, 13);
-            this.Fram.TabIndex = 1;
-            this.Fram.Text = "Fram";
             // 
             // label4
             // 
@@ -207,10 +189,8 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView2);
-            this.groupBox1.Controls.Add(this.txtFram);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.Fram);
             this.groupBox1.Location = new System.Drawing.Point(16, 193);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(326, 182);
@@ -277,9 +257,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNom;
-        private System.Windows.Forms.TextBox txtFram;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Fram;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgvCompra;
         private System.Windows.Forms.Label label6;

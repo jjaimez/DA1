@@ -38,20 +38,18 @@
             this.dgvCompra = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCli = new System.Windows.Forms.TextBox();
-            this.txtFram = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Fram = new System.Windows.Forms.Label();
+            this.txtBusArt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtBusNom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dvgTblClientes = new System.Windows.Forms.DataGridView();
+            this.dvgTblArticulos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgTblClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgTblArticulos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -59,7 +57,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(600, 339);
+            this.button2.Location = new System.Drawing.Point(649, 483);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(213, 31);
             this.button2.TabIndex = 31;
@@ -68,7 +66,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(349, 339);
+            this.button1.Location = new System.Drawing.Point(398, 483);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(213, 31);
             this.button1.TabIndex = 30;
@@ -77,7 +75,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(713, 296);
+            this.txtTotal.Location = new System.Drawing.Point(762, 440);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
             this.txtTotal.TabIndex = 29;
@@ -85,7 +83,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(667, 300);
+            this.label8.Location = new System.Drawing.Point(716, 444);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 28;
@@ -93,7 +91,7 @@
             // 
             // btnBorrarArtSel
             // 
-            this.btnBorrarArtSel.Location = new System.Drawing.Point(349, 292);
+            this.btnBorrarArtSel.Location = new System.Drawing.Point(398, 436);
             this.btnBorrarArtSel.Name = "btnBorrarArtSel";
             this.btnBorrarArtSel.Size = new System.Drawing.Size(179, 30);
             this.btnBorrarArtSel.TabIndex = 26;
@@ -119,9 +117,9 @@
             // dgvCompra
             // 
             this.dgvCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCompra.Location = new System.Drawing.Point(7, 53);
+            this.dgvCompra.Location = new System.Drawing.Point(12, 53);
             this.dgvCompra.Name = "dgvCompra";
-            this.dgvCompra.Size = new System.Drawing.Size(443, 195);
+            this.dgvCompra.Size = new System.Drawing.Size(438, 335);
             this.dgvCompra.TabIndex = 5;
             // 
             // label6
@@ -140,28 +138,13 @@
             this.txtCli.Size = new System.Drawing.Size(153, 20);
             this.txtCli.TabIndex = 8;
             // 
-            // txtFram
+            // txtBusArt
             // 
-            this.txtFram.Location = new System.Drawing.Point(55, 48);
-            this.txtFram.Name = "txtFram";
-            this.txtFram.Size = new System.Drawing.Size(198, 20);
-            this.txtFram.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(55, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // Fram
-            // 
-            this.Fram.AutoSize = true;
-            this.Fram.Location = new System.Drawing.Point(9, 51);
-            this.Fram.Name = "Fram";
-            this.Fram.Size = new System.Drawing.Size(30, 13);
-            this.Fram.TabIndex = 1;
-            this.Fram.Text = "Fram";
+            this.txtBusArt.Location = new System.Drawing.Point(55, 20);
+            this.txtBusArt.Name = "txtBusArt";
+            this.txtBusArt.Size = new System.Drawing.Size(198, 20);
+            this.txtBusArt.TabIndex = 2;
+            this.txtBusArt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // label4
             // 
@@ -172,12 +155,13 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Codigo";
             // 
-            // txtNom
+            // txtBusNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(86, 26);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(184, 20);
-            this.txtNom.TabIndex = 2;
+            this.txtBusNom.Location = new System.Drawing.Point(86, 26);
+            this.txtBusNom.Name = "txtBusNom";
+            this.txtBusNom.Size = new System.Drawing.Size(184, 20);
+            this.txtBusNom.TabIndex = 2;
+            this.txtBusNom.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtNom_KeyUp);
             // 
             // label1
             // 
@@ -188,44 +172,44 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // dataGridView1
+            // dvgTblClientes
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 52);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(297, 95);
-            this.dataGridView1.TabIndex = 11;
+            this.dvgTblClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgTblClientes.Location = new System.Drawing.Point(19, 53);
+            this.dvgTblClientes.Name = "dvgTblClientes";
+            this.dvgTblClientes.Size = new System.Drawing.Size(341, 184);
+            this.dvgTblClientes.TabIndex = 11;
+            this.dvgTblClientes.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgTblClientes_RowEnter);
             // 
-            // dataGridView2
+            // dvgTblArticulos
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 74);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(290, 102);
-            this.dataGridView2.TabIndex = 12;
+            this.dvgTblArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgTblArticulos.Location = new System.Drawing.Point(6, 56);
+            this.dvgTblArticulos.Name = "dvgTblArticulos";
+            this.dvgTblArticulos.Size = new System.Drawing.Size(357, 168);
+            this.dvgTblArticulos.TabIndex = 12;
+            this.dvgTblArticulos.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_RowEnter);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.txtNom);
+            this.groupBox1.Controls.Add(this.dvgTblClientes);
+            this.groupBox1.Controls.Add(this.txtBusNom);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(315, 153);
+            this.groupBox1.Size = new System.Drawing.Size(378, 243);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CLIENTES";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.txtFram);
+            this.groupBox2.Controls.Add(this.dvgTblArticulos);
+            this.groupBox2.Controls.Add(this.txtBusArt);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.Fram);
-            this.groupBox2.Location = new System.Drawing.Point(18, 185);
+            this.groupBox2.Location = new System.Drawing.Point(23, 275);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(313, 185);
+            this.groupBox2.Size = new System.Drawing.Size(369, 239);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ARTICULOS";
@@ -237,9 +221,9 @@
             this.groupBox3.Controls.Add(this.txtFecha);
             this.groupBox3.Controls.Add(this.txtCli);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(351, 26);
+            this.groupBox3.Location = new System.Drawing.Point(400, 26);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(464, 264);
+            this.groupBox3.Size = new System.Drawing.Size(464, 404);
             this.groupBox3.TabIndex = 35;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "FACTURA";
@@ -248,7 +232,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 384);
+            this.ClientSize = new System.Drawing.Size(876, 532);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -259,9 +243,10 @@
             this.Controls.Add(this.btnBorrarArtSel);
             this.Name = "realizarVenta";
             this.Text = "Registro Venta";
+            this.Load += new System.EventHandler(this.realizarVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgTblClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgTblArticulos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -285,14 +270,12 @@
         private System.Windows.Forms.DataGridView dgvCompra;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCli;
-        private System.Windows.Forms.TextBox txtFram;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Fram;
+        private System.Windows.Forms.TextBox txtBusArt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox txtBusNom;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dvgTblClientes;
+        private System.Windows.Forms.DataGridView dvgTblArticulos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
