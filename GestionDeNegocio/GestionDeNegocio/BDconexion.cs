@@ -19,7 +19,7 @@ namespace GestionDeNegocio
     {
 
 
-        public MySqlConnection cnn = new MySqlConnection("Server=localhost;Uid=root;Pwd= root;Database=gestionnegocio;Port=3306");
+        public MySqlConnection cnn = new MySqlConnection("Server=localhost;Uid=root;Pwd=root;Database=gestionnegocio;Port=3306");
         public MySqlCommand cmd = new MySqlCommand();
         public DataSet ds = new DataSet();
         DataTable dt;
@@ -52,7 +52,7 @@ namespace GestionDeNegocio
                 da.Fill(dt);//
                 dv.DataSource = dt;//
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("no datos cliente");
             }
@@ -74,14 +74,25 @@ namespace GestionDeNegocio
                 MessageBox.Show("no datos Proveedor");
             }
 
-            
+
         }
 
         //----------------------------Mostrar los datos del Articulo ------------------------------------
 
-        public void mostrarArticulo(DataGridView dv)
+        public void mostrarArticulos(DataGridView dv)
         {
+            try
+            {
+                da = new MySqlDataAdapter("Select id as id,nombre as nombre,marca as marca,proveedor_id as proveedor_id,descripcion as descripcion, stock_actual as stock_actual, stock_minimo as stock_minimo, precio_compra as precio_compra, precio_venta as precio_venta from articulos", cnn);
 
+                dt = new DataTable();
+                da.Fill(dt);//
+                dv.DataSource = dt;//
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no datos Proveedor");
+            }
         }
         //------------------------Datos del Cliente---------------------------------------
 
@@ -121,15 +132,21 @@ namespace GestionDeNegocio
 
         //------------------------Datos del Articulo---------------------------------------
 
-        public void insertarArticulo(TextBox txt1, TextBox txt2, TextBox txt3, ComboBox txt4, TextBox txt5, TextBox txt6, TextBox txt7, TextBox txt8, TextBox txt9)
+        public void insertarArticulo(TextBox txt1, TextBox txt2, ComboBox txt3, TextBox txt4, TextBox txt5, TextBox txt6, TextBox txt7, TextBox txt8)
         {
-
+            try
+            {
+                cnn.Open();
+                cmd.CommandText = "Insert into articulos(nombre, marca, proveedor_id, descripcion, stock_actual, stock_minimo, precio_compra, precio_venta)values('" + txt1.Text + "','" + txt2.Text + "','" + txt3.Text + "','" + txt4.Text + "','" + txt5.Text + "','" + txt6.Text + "','" + txt7.Text + "','" + txt8.Text + "')";
+                cmd.Connection = cnn;
+                cmd.ExecuteNonQuery();
+                cnn.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show("No se pudieron guardar los datos");
+            }
         }
-        //----------------------------Buscar cliente----------------------------------
 
-
-     
-
-      
     }
 }

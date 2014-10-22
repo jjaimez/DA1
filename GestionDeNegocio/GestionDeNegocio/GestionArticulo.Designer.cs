@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rtbDescripcion = new System.Windows.Forms.TextBox();
             this.cbProveedor = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgv_Mostrar = new System.Windows.Forms.DataGridView();
@@ -58,13 +57,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Mostrar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rtbDescripcion);
+            this.groupBox1.Controls.Add(this.txtDescripcion);
             this.groupBox1.Controls.Add(this.cbProveedor);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dgv_Mostrar);
@@ -101,14 +101,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS ARTICULO";
             // 
-            // rtbDescripcion
-            // 
-            this.rtbDescripcion.Location = new System.Drawing.Point(107, 486);
-            this.rtbDescripcion.Multiline = true;
-            this.rtbDescripcion.Name = "rtbDescripcion";
-            this.rtbDescripcion.Size = new System.Drawing.Size(337, 66);
-            this.rtbDescripcion.TabIndex = 45;
-            // 
             // cbProveedor
             // 
             this.cbProveedor.FormattingEnabled = true;
@@ -134,6 +126,7 @@
             this.dgv_Mostrar.ReadOnly = true;
             this.dgv_Mostrar.Size = new System.Drawing.Size(581, 252);
             this.dgv_Mostrar.TabIndex = 42;
+            this.dgv_Mostrar.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Mostrar_RowEnter);
             // 
             // proveedores
             // 
@@ -165,7 +158,6 @@
             // 
             // txtId
             // 
-            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(86, 329);
             this.txtId.Name = "txtId";
@@ -192,7 +184,6 @@
             // 
             // txtStockActual
             // 
-            this.txtStockActual.Enabled = false;
             this.txtStockActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStockActual.Location = new System.Drawing.Point(368, 329);
             this.txtStockActual.Name = "txtStockActual";
@@ -210,7 +201,6 @@
             // 
             // txtPrecioCompra
             // 
-            this.txtPrecioCompra.Enabled = false;
             this.txtPrecioCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecioCompra.Location = new System.Drawing.Point(368, 405);
             this.txtPrecioCompra.Name = "txtPrecioCompra";
@@ -228,7 +218,6 @@
             // 
             // txtPrecioVenta
             // 
-            this.txtPrecioVenta.Enabled = false;
             this.txtPrecioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecioVenta.Location = new System.Drawing.Point(368, 443);
             this.txtPrecioVenta.Name = "txtPrecioVenta";
@@ -237,7 +226,6 @@
             // 
             // txtStockMinimo
             // 
-            this.txtStockMinimo.Enabled = false;
             this.txtStockMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStockMinimo.Location = new System.Drawing.Point(368, 365);
             this.txtStockMinimo.Name = "txtStockMinimo";
@@ -246,23 +234,23 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Enabled = false;
             this.btnModificar.Location = new System.Drawing.Point(515, 478);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 22;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Enabled = false;
             this.btnEliminar.Location = new System.Drawing.Point(515, 440);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 21;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnGuardar
             // 
@@ -283,6 +271,7 @@
             this.btnNuevo.TabIndex = 19;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label4
             // 
@@ -295,7 +284,6 @@
             // 
             // txtMarca
             // 
-            this.txtMarca.Enabled = false;
             this.txtMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarca.Location = new System.Drawing.Point(86, 402);
             this.txtMarca.Name = "txtMarca";
@@ -313,7 +301,6 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Enabled = false;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(86, 364);
             this.txtNombre.Name = "txtNombre";
@@ -323,10 +310,11 @@
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(98, 37);
+            this.txtBuscar.Location = new System.Drawing.Point(98, 36);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(376, 20);
             this.txtBuscar.TabIndex = 11;
+            this.txtBuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscar_KeyUp);
             // 
             // label11
             // 
@@ -364,6 +352,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar:";
             // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(134, 486);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(321, 56);
+            this.txtDescripcion.TabIndex = 45;
+            // 
             // GestionArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -383,7 +379,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox rtbDescripcion;
         private System.Windows.Forms.ComboBox cbProveedor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgv_Mostrar;
@@ -412,6 +407,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtDescripcion;
 
     }
 }
