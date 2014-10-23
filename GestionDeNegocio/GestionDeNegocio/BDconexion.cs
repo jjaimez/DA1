@@ -118,7 +118,7 @@ namespace GestionDeNegocio
         {
             try
             {
-                da = new MySqlDataAdapter("Select id as id,nombre as nombre,marca as marca,descripcion as descripcion from articulos", cnn);
+                da = new MySqlDataAdapter("Select id as id,nombre as nombre,marca as marca,descripcion as descripcion, precio_venta as precio_venta from articulos", cnn);
 
                 dt = new DataTable();
                 da.Fill(dt);//

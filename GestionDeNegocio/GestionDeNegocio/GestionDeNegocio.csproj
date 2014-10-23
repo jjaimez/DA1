@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EArticulo.cs" />
     <Compile Include="ExporImporExcel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +83,7 @@
     <Compile Include="gestionProveedor.Designer.cs">
       <DependentUpon>gestionProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ICliente.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
