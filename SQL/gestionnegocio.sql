@@ -38,7 +38,6 @@ create table gestionnegocio.ventas (
     monto float,
     cliente_id integer,
     fecha date not null,
-    pago int,
     PRIMARY KEY (`id`) );
 
 create table gestionnegocio.compras (
@@ -46,20 +45,7 @@ create table gestionnegocio.compras (
     monto float,
     proveedor_id integer,
     fecha date not null,
-    pago int,
     PRIMARY KEY (`id`) );
-
-
-create table clientes_articulos(
-    id integer not null auto_increment,
-    cliente_id integer,
-    articulo_id integer,
-    cantidad float not null,
-  precio_final float,
-  check (cantidad>0),
-  check (precio_final>0),
-    primary key(id) );
-
 
 create table articulos_ventas (
     id integer not null auto_increment,
