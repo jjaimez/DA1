@@ -19,7 +19,7 @@ namespace GestionDeNegocio
     {
 
 
-        public MySqlConnection cnn = new MySqlConnection("Server=localhost;Uid=root;Pwd=root;Database=gestionnegocio;Port=3306");
+        public MySqlConnection cnn = new MySqlConnection("Server=localhost;Uid=root;Pwd=;Database=gestionnegocio;Port=3306");
         public MySqlCommand cmd = new MySqlCommand();
         public DataSet ds = new DataSet();
         DataTable dt;

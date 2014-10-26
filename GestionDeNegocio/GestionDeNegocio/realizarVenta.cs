@@ -20,8 +20,7 @@ namespace GestionDeNegocio
 {
     public partial class realizarVenta : Form
     {
-        public ICliente Caller { private get; set; }
-        BDconexion bd = new BDconexion();
+                BDconexion bd = new BDconexion();
 
         public realizarVenta()
         {
@@ -96,6 +95,8 @@ namespace GestionDeNegocio
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            dgvCompra.Rows.Add(txtCliente.Text, txtDocumento.Text, txtNombre.Text, txtMarca.Text, txtDescripcion.Text, txtFecha.Text, txtPrecio.Text);
+            
             //Realizar Suma total de Precio
             double resul = dgvCompra.Rows.Cast<DataGridViewRow>().Sum(x => Convert.ToDouble(x.Cells["Precio"].Value));
 

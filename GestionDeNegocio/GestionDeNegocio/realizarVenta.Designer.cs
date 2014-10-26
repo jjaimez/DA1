@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnBorrarArtSel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvCompra = new System.Windows.Forms.DataGridView();
+            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBusArt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -59,13 +64,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.DateTimePicker();
-            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txttotal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgTblClientes)).BeginInit();
@@ -75,18 +73,9 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(677, 483);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 31);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Realizar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(398, 483);
+            this.button1.Location = new System.Drawing.Point(456, 468);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(213, 31);
             this.button1.TabIndex = 30;
@@ -97,21 +86,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(744, 444);
+            this.label8.Location = new System.Drawing.Point(971, 477);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 28;
             this.label8.Text = "Total";
-            // 
-            // btnBorrarArtSel
-            // 
-            this.btnBorrarArtSel.Location = new System.Drawing.Point(398, 436);
-            this.btnBorrarArtSel.Name = "btnBorrarArtSel";
-            this.btnBorrarArtSel.Size = new System.Drawing.Size(179, 30);
-            this.btnBorrarArtSel.TabIndex = 26;
-            this.btnBorrarArtSel.Text = "Borrar Articulos Seleccionados";
-            this.btnBorrarArtSel.UseVisualStyleBackColor = true;
-            this.btnBorrarArtSel.Click += new System.EventHandler(this.btnBorrarArtSel_Click);
             // 
             // label7
             // 
@@ -137,6 +116,41 @@
             this.dgvCompra.Name = "dgvCompra";
             this.dgvCompra.Size = new System.Drawing.Size(711, 138);
             this.dgvCompra.TabIndex = 5;
+            // 
+            // Cliente
+            // 
+            this.Cliente.HeaderText = "Cliente";
+            this.Cliente.Name = "Cliente";
+            // 
+            // Documento
+            // 
+            this.Documento.HeaderText = "Documento";
+            this.Documento.Name = "Documento";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Marca
+            // 
+            this.Marca.HeaderText = "Marca";
+            this.Marca.Name = "Marca";
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
             // 
             // label6
             // 
@@ -371,44 +385,9 @@
             this.txtFecha.Size = new System.Drawing.Size(197, 20);
             this.txtFecha.TabIndex = 10;
             // 
-            // Cliente
-            // 
-            this.Cliente.HeaderText = "Cliente";
-            this.Cliente.Name = "Cliente";
-            // 
-            // Documento
-            // 
-            this.Documento.HeaderText = "Documento";
-            this.Documento.Name = "Documento";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Marca
-            // 
-            this.Marca.HeaderText = "Marca";
-            this.Marca.Name = "Marca";
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            // 
             // txttotal
             // 
-            this.txttotal.Location = new System.Drawing.Point(791, 441);
+            this.txttotal.Location = new System.Drawing.Point(1018, 474);
             this.txttotal.Name = "txttotal";
             this.txttotal.Size = new System.Drawing.Size(90, 20);
             this.txttotal.TabIndex = 25;
@@ -424,10 +403,8 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnBorrarArtSel);
             this.Name = "realizarVenta";
             this.Text = "Registro Venta";
             this.Load += new System.EventHandler(this.realizarVenta_Load);
@@ -447,10 +424,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnBorrarArtSel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvCompra;
         private System.Windows.Forms.Label label6;

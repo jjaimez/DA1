@@ -38,6 +38,7 @@
             this.articulo = new System.Windows.Forms.Button();
             this.proveedor = new System.Windows.Forms.Button();
             this.cliente = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,12 +159,25 @@
             this.cliente.UseVisualStyleBackColor = true;
             this.cliente.Click += new System.EventHandler(this.cliente_Click_1);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(12, 601);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 88);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Sin Stock";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // AplicacionGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(801, 603);
+            this.ClientSize = new System.Drawing.Size(801, 703);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.exExcel);
             this.Controls.Add(this.compra);
             this.Controls.Add(this.venta);
@@ -193,6 +207,7 @@
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
+        private System.Windows.Forms.Button button1;
 
     }
 }

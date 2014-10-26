@@ -68,3 +68,26 @@ C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeN
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionUsuario.resources
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarCompra.resources
 C:\Users\User\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarVenta.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\Interop.ExcelClientPkgLib.dll
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.ResolveComReference.cache
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.AplicacionGui.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.ExporImporExcel.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionCliente.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionArticulo.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.gestionProveedor.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionUsuario.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Properties.Resources.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarCompra.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarVenta.resources
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.pdb
+C:\Users\adms_ppis\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\ExcelLibrary.dll
+E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\Interop.ExcelClientPkgLib.dll
+E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.ResolveComReference.cache
+E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
+E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb

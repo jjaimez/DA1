@@ -74,7 +74,7 @@ namespace GestionDeNegocio
         {
             bd.mostrarArticulos(dgv_Mostrar);
 
-            try
+            /*try
             {
                 bd.cnn.Open();
 
@@ -98,7 +98,7 @@ namespace GestionDeNegocio
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
 
 
