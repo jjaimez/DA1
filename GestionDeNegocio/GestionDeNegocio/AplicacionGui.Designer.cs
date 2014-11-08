@@ -58,20 +58,20 @@
             this.modificarDatosToolStripMenuItem,
             this.salirToolStripMenuItem1});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // modificarDatosToolStripMenuItem
             // 
             this.modificarDatosToolStripMenuItem.Name = "modificarDatosToolStripMenuItem";
-            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.modificarDatosToolStripMenuItem.Text = "Modificar Datos Usuario";
             this.modificarDatosToolStripMenuItem.Click += new System.EventHandler(this.modificarDatosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
             this.salirToolStripMenuItem1.Text = "Salir ";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
@@ -170,6 +170,7 @@
             this.button1.Text = "Sin Stock";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AplicacionGui
             // 
