@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 //----------------------------------------------
 //Formulario
 using System.Data;
+using System.Data.SqlClient;
 //----------------------------------------------
 //Librerias
-using MySql.Data;
-using MySql.Data.MySqlClient;
-//---------------------------------------------
+//--------------------------------------------
+
 
 namespace GestionDeNegocio
 {
@@ -30,12 +31,12 @@ namespace GestionDeNegocio
         private void txtNom_KeyUp(object sender, KeyEventArgs e)
         {
             bd.cnn.Open();
-            MySqlCommand cmd = bd.cnn.CreateCommand();
+            SqlCommand cmd = bd.cnn.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select * from clientes where nombre like('" + txtBusNom.Text + "%')";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             dvgTblClientes.DataSource = dt;
             bd.cnn.Close();
@@ -82,12 +83,12 @@ namespace GestionDeNegocio
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
             bd.cnn.Open();
-            MySqlCommand cmd = bd.cnn.CreateCommand();
+            SqlCommand cmd = bd.cnn.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select * from articulos where id like('" + txtBusArt.Text + "%')";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             dvgTblArticulos.DataSource = dt;
             bd.cnn.Close();
@@ -101,7 +102,7 @@ namespace GestionDeNegocio
             double resul = dgvCompra.Rows.Cast<DataGridViewRow>().Sum(x => Convert.ToDouble(x.Cells["Precio"].Value));
 
             //mostramos la suma en el textbox y en la fila que agregamos
-            txttotal.Text = Convert.ToString(resul);
+            txtTotal.Text = Convert.ToString(resul);
             DataGridViewRow rowtotal = dgvCompra.Rows[dgvCompra.Rows.Count - 1];
             rowtotal.Cells["Precio"].Value = resul;
         }
@@ -202,6 +203,29 @@ namespace GestionDeNegocio
             this.txtDescripcion.Text = "";
             this.txtFecha.Text = "";
             this.txtPrecio.Text = "";
+        }
+
+        private void txtGuardar_Click(object sender, EventArgs e)
+        {
+            if (txtId.Text == "" || txtCliente.Text == "" || txtFecha.Text == ""|| txtTotal.Text == "")
+            {
+                MessageBox.Show("Rellene Todos los Campos", "Campos Vacios", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+
+                    int resultado = bd.Ventas(txtId, txtCliente, txtFecha, txtTotal);
+                    if (resultado > 0)
+                    {
+                        //MessageBox.Show("Cuenta Creada con Exito");
+                        MessageBox.Show("Ingreso de Datos Correctos", "Ingreso Exitoso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        //MessageBox.Show("No se pudo Crear la Cuenta");
+                        MessageBox.Show("Ingreso de Datos Incorrectos, Verifique por favor", "Error al Ingresar Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+            }
         }
 
 

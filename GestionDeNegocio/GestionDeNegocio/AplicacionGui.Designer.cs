@@ -32,13 +32,13 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.exExcel = new System.Windows.Forms.Button();
             this.compra = new System.Windows.Forms.Button();
             this.venta = new System.Windows.Forms.Button();
             this.articulo = new System.Windows.Forms.Button();
             this.proveedor = new System.Windows.Forms.Button();
             this.cliente = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,33 +58,47 @@
             this.modificarDatosToolStripMenuItem,
             this.salirToolStripMenuItem1});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // modificarDatosToolStripMenuItem
             // 
             this.modificarDatosToolStripMenuItem.Name = "modificarDatosToolStripMenuItem";
-            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.modificarDatosToolStripMenuItem.Text = "Modificar Datos Usuario";
             this.modificarDatosToolStripMenuItem.Click += new System.EventHandler(this.modificarDatosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
             this.salirToolStripMenuItem1.Text = "Salir ";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::GestionDeNegocio.Properties.Resources.stock;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(12, 601);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 88);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Sin Stock";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // exExcel
             // 
             this.exExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exExcel.Image = global::GestionDeNegocio.Properties.Resources.stock;
+            this.exExcel.Image = global::GestionDeNegocio.Properties.Resources.report;
             this.exExcel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.exExcel.Location = new System.Drawing.Point(12, 507);
             this.exExcel.Name = "exExcel";
             this.exExcel.Size = new System.Drawing.Size(106, 88);
             this.exExcel.TabIndex = 12;
-            this.exExcel.Text = "Exportar e Importar Excel";
+            this.exExcel.Text = "Reportes";
             this.exExcel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.exExcel.UseVisualStyleBackColor = true;
             this.exExcel.Click += new System.EventHandler(this.sinStock_Click);
@@ -158,19 +172,6 @@
             this.cliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.cliente.UseVisualStyleBackColor = true;
             this.cliente.Click += new System.EventHandler(this.cliente_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(12, 601);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 88);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Sin Stock";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AplicacionGui
             // 

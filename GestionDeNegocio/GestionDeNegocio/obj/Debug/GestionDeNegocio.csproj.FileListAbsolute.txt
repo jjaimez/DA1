@@ -91,3 +91,26 @@ E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\
 E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.ResolveComReference.cache
 E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
 E:\mar usb\usb 251014\Nueva carpeta\ddddd\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\Interop.ExcelClientPkgLib.dll
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.ResolveComReference.cache
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.exe
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.pdb
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe.config
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.exe
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\GestionDeNegocio.pdb
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\ExcelLibrary.dll
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.AplicacionGui.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionCliente.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionArticulo.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.gestionProveedor.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Login.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.GestionUsuario.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.Properties.Resources.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarCompra.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.realizarVenta.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csproj.GenerateResource.Cache
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.ReporteArticulos.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\RdlCompile.cache
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\RdlCompile.compiled
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.sinstoc.resources
+C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\GestionDeNegocio.csprojResolveAssemblyReference.cache

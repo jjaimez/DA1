@@ -64,7 +64,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.DateTimePicker();
-            this.txttotal = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtGuardar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgTblClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgTblArticulos)).BeginInit();
@@ -385,21 +386,32 @@
             this.txtFecha.Size = new System.Drawing.Size(197, 20);
             this.txtFecha.TabIndex = 10;
             // 
-            // txttotal
+            // txtTotal
             // 
-            this.txttotal.Location = new System.Drawing.Point(1018, 474);
-            this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(90, 20);
-            this.txttotal.TabIndex = 25;
-            this.txttotal.Text = "0";
-            this.txttotal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txttotal_KeyUp);
+            this.txtTotal.Location = new System.Drawing.Point(1018, 474);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(90, 20);
+            this.txtTotal.TabIndex = 25;
+            this.txtTotal.Text = "0";
+            this.txtTotal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txttotal_KeyUp);
+            // 
+            // txtGuardar
+            // 
+            this.txtGuardar.Location = new System.Drawing.Point(712, 468);
+            this.txtGuardar.Name = "txtGuardar";
+            this.txtGuardar.Size = new System.Drawing.Size(213, 31);
+            this.txtGuardar.TabIndex = 36;
+            this.txtGuardar.Text = "Guardar";
+            this.txtGuardar.UseVisualStyleBackColor = true;
+            this.txtGuardar.Click += new System.EventHandler(this.txtGuardar_Click);
             // 
             // realizarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 532);
-            this.Controls.Add(this.txttotal);
+            this.Controls.Add(this.txtGuardar);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -460,6 +472,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.TextBox txttotal;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button txtGuardar;
     }
 }

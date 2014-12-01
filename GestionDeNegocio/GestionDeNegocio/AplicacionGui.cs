@@ -85,8 +85,8 @@ namespace GestionDeNegocio
 
         private void sinStock_Click(object sender, EventArgs e)
         {
-            ExporImporExcel excel = new ExporImporExcel();
-            excel.Show();
+            ReporteArticulos rep = new ReporteArticulos();
+            rep.Show();
         }
 
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)

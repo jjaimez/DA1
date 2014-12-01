@@ -7,11 +7,10 @@ using System.Windows.Forms;
 //----------------------------------------------
 //Formulario
 using System.Data;
+using System.Data.SqlClient;
 //----------------------------------------------
 //Librerias
-using MySql.Data;
-using MySql.Data.MySqlClient;
-//---------------------------------------------
+//--------------------------------------------
 
 namespace GestionDeNegocio
 {
@@ -30,7 +29,7 @@ namespace GestionDeNegocio
        
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "" || txtDocumento.Text == "" || txtTelefono.Text == "" || txtCelular.Text == "" || txtEmail.Text == "")
+            if (txtId.Text == "" || txtNombre.Text == "" || txtDocumento.Text == "" || txtTelefono.Text == "" || txtCelular.Text == "" || txtEmail.Text == "")
             {
                 MessageBox.Show(" Rellene todos los campos", "Campos vacios", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 txtNombre.Focus();
@@ -40,7 +39,7 @@ namespace GestionDeNegocio
                 try
                 {
 
-                    bd.insertarCliente(txtNombre, txtDocumento, txtTelefono, txtCelular, txtEmail);
+                    bd.insertarCliente(txtId, txtNombre, txtDocumento, txtTelefono, txtCelular, txtEmail);
                     bd.mostrarClientes(dgv_Mostrar);
                     MessageBox.Show("Se insertaron correctamente los datos");
                     /*
@@ -91,7 +90,7 @@ namespace GestionDeNegocio
         {
             bd.cnn.Open();
             string borra = "DELETE FROM CLIENTES WHERE ID='" + txtId.Text + "'";
-            MySqlCommand cmd = new MySqlCommand(borra, bd.cnn);
+            SqlCommand cmd = new SqlCommand(borra, bd.cnn);
             cmd.ExecuteNonQuery();
             bd.cnn.Close();
             bd.mostrarClientes(dgv_Mostrar);
@@ -116,8 +115,8 @@ namespace GestionDeNegocio
                     + "',celular='" + this.txtCelular.Text
                     + "',email='" + this.txtEmail.Text
                     + "' where id='" + this.txtId.Text + "';";
-                MySqlCommand MyCommand2 = new MySqlCommand(Query, bd.cnn);
-                MySqlDataReader MyReader2;
+                SqlCommand MyCommand2 = new SqlCommand(Query, bd.cnn);
+                SqlDataReader MyReader2;
                 bd.cnn.Open();
                 MyReader2 = MyCommand2.ExecuteReader();
                 MessageBox.Show("Registro modificado");
@@ -148,12 +147,12 @@ namespace GestionDeNegocio
         private void txt_Buscar_KeyUp(object sender, KeyEventArgs e)
         {
             bd.cnn.Open();
-            MySqlCommand cmd = bd.cnn.CreateCommand();
+            SqlCommand cmd = bd.cnn.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select * from clientes where nombre like('" + txt_Buscar.Text + "%')";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             dgv_Mostrar.DataSource = dt;
             bd.cnn.Close();

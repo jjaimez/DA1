@@ -35,16 +35,16 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 29);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(599, 440);
+            this.dataGridView1.Size = new System.Drawing.Size(942, 326);
             this.dataGridView1.TabIndex = 0;
             // 
             // sinstoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 434);
+            this.ClientSize = new System.Drawing.Size(967, 405);
             this.Controls.Add(this.dataGridView1);
             this.Name = "sinstoc";
             this.Text = "sinstoc";

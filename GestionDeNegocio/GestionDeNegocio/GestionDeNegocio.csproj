@@ -38,9 +38,12 @@
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,11 +54,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExporImporExcel.cs">
+    <Compile Include="gestionnegocioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestionnegocioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExporImporExcel.Designer.cs">
-      <DependentUpon>ExporImporExcel.cs</DependentUpon>
+    <Compile Include="ReporteArticulos.Designer.cs">
+      <DependentUpon>ReporteArticulos.cs</DependentUpon>
     </Compile>
     <Compile Include="BDconexion.cs" />
     <Compile Include="AplicacionGui.cs">
@@ -108,11 +116,18 @@
     <Compile Include="realizarVenta.Designer.cs">
       <DependentUpon>realizarVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="sinstoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sinstoc.Designer.cs">
+      <DependentUpon>sinstoc.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AplicacionGui.resx">
       <DependentUpon>AplicacionGui.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExporImporExcel.resx">
-      <DependentUpon>ExporImporExcel.cs</DependentUpon>
+    <EmbeddedResource Include="Report.rdlc" />
+    <EmbeddedResource Include="ReporteArticulos.resx">
+      <DependentUpon>ReporteArticulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCliente.resx">
       <DependentUpon>GestionCliente.cs</DependentUpon>
@@ -145,6 +160,21 @@
     <EmbeddedResource Include="realizarVenta.resx">
       <DependentUpon>realizarVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sinstoc.resx">
+      <DependentUpon>sinstoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="gestionnegocioDataSet.xsc">
+      <DependentUpon>gestionnegocioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestionnegocioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestionnegocioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestionnegocioDataSet.xss">
+      <DependentUpon>gestionnegocioDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -210,6 +240,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\report.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

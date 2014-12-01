@@ -7,8 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using MySql.Data;
+//----------------------------------------------
+//Formulario
+using System.Data;
+using System.Data.SqlClient;
+//----------------------------------------------
+//Librerias
+//--------------------------------------------
 
 namespace GestionDeNegocio
 {
@@ -17,7 +22,7 @@ namespace GestionDeNegocio
 
         int i = 0;
         BDconexion bd = new BDconexion();
-        MySqlCommand cmd = new MySqlCommand();
+        SqlCommand cmd = new SqlCommand();
 
         public Login()
         {
