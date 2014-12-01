@@ -144,9 +144,6 @@ namespace GestionDeNegocio
                 bd.cnn.Open();
                 MyReader2 = MyCommand2.ExecuteReader();
                 MessageBox.Show("Registro modificado");
-                while (MyReader2.Read())
-                {
-                }
                 bd.cnn.Close();//
                 bd.mostrarProveedores(dgv_Mostrar);//actualiza el datagridview
             }

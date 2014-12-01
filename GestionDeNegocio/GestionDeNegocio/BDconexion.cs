@@ -9,17 +9,11 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
 //----------------------------------------------
-//Librerias
-using MySql.Data;
-using MySql.Data.MySqlClient;
-//---------------------------------------------
 
 namespace GestionDeNegocio
 {
     public class BDconexion
     {
-
-
         public SqlConnection cnn = new SqlConnection("Data Source=FABIOLA-PC\\SQLEXPRESS;Initial Catalog=gestionnegocio;Integrated Security=True");
         public SqlCommand cmd = new SqlCommand();
         public DataSet ds = new DataSet();
@@ -28,7 +22,7 @@ namespace GestionDeNegocio
         //MySqlDataReader dr;
 
         //----------------------------Crear un Nuevo Usuario en el Login-------------------------------
-        public int CrearCuentas(TextBox txt3, TextBox txt4)//string pUsuario, string pContraseña)
+        public int CrearCuentas(TextBox txt3, TextBox txt4)
         {
             int resultado = 0;
             cmd = new SqlCommand(string.Format("insert into login (nombre, pass) values ('{0}',('{1}'))", txt3.Text, txt4.Text), cnn);
@@ -43,20 +37,15 @@ namespace GestionDeNegocio
         }
 
         //----------------------------Ventas-------------------------------
-        //Ventas(txtId, txtCliente, txtFecha, txtTotal);
-        public int Ventas(TextBox txt3, TextBox txt4, DateTimePicker txt5, TextBox txt6)//string pUsuario, string pContraseña)
+        public int Ventas(TextBox txt3, TextBox txt4, DateTimePicker txt5, TextBox txt6)
         {
             int resultado = 0;
             String fecha = txt5.Value.ToShortDateString();
             cmd = new SqlCommand(string.Format("insert into ventas (id , cliente_id, fecha, monto) values ('{0}',('{1}'),('{2}'),('{3}'))", txt3.Text, txt4.Text, fecha, txt6.Text), cnn);
             cnn.Open();
-
             resultado = cmd.ExecuteNonQuery();
-
             cnn.Close();
-
             return resultado;
-
         }
 
         //----------------------------Compras-------------------------------
@@ -76,23 +65,7 @@ namespace GestionDeNegocio
 
         }
 
-        //----------------------------Mostrar los datos del cliente------------------------------------
-
-        public void mostrarClientes(DataGridView dv)
-        {
-            try
-            {
-                da = new SqlDataAdapter("Select id as id,nombre as nombre,telefono as telefono,celular as celular,email as email, documento as documento from clientes", cnn);
-                dt = new DataTable();
-                da.Fill(dt);//
-                dv.DataSource = dt;//
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("no datos cliente");
-            }
-        }
-
+        
         //----------------------------Mostrar los datos del cliente realizarVenta------------------------------------
 
         public void mostrarClientes2(DataGridView dv)
@@ -164,23 +137,7 @@ namespace GestionDeNegocio
                 MessageBox.Show("no datos Proveedor");
             }
         }
-        //------------------------Datos del Cliente---------------------------------------
-
-        public void insertarCliente(TextBox txt2, TextBox txt3, TextBox txt4, TextBox txt5, TextBox txt6, TextBox txt7)
-        {
-            try
-            {
-                cnn.Open();
-                cmd.CommandText = "Insert into clientes(id,nombre,telefono,celular,email, documento)values('" + txt3.Text + "','" + txt3.Text + "','" + txt4.Text + "','" + txt5.Text + "','" + txt6.Text + "','" + txt7.Text + "')";
-                cmd.Connection = cnn;
-                cmd.ExecuteNonQuery();
-                cnn.Close();
-            }
-            catch (Exception m)
-            {
-                // MessageBox.Show("No se pudieron insertar los datos");
-            }
-        }
+        
 
         //------------------------Datos del Proveedor---------------------------------------
 

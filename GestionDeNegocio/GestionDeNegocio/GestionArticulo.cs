@@ -119,11 +119,7 @@ namespace GestionDeNegocio
             this.txtStockMinimo.Text = "";
             this.txtPrecioCompra.Text = "";
             this.txtPrecioVenta.Text = "";
-
             MessageBox.Show("registro eliminado con exito");
-
-
-
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

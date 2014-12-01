@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeNegocio", "GestionDeNegocio\GestionDeNegocio.csproj", "{4161522A-F68D-48E9-B3BF-33C3BD011846}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{CD05D8B9-9404-4283-A20D-8815242E6CA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{4161522A-F68D-48E9-B3BF-33C3BD011846}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4161522A-F68D-48E9-B3BF-33C3BD011846}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4161522A-F68D-48E9-B3BF-33C3BD011846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD05D8B9-9404-4283-A20D-8815242E6CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD05D8B9-9404-4283-A20D-8815242E6CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD05D8B9-9404-4283-A20D-8815242E6CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD05D8B9-9404-4283-A20D-8815242E6CA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

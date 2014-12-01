@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="gestionnegocio" Class="db_entityDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=FABIOLA-PC\SQLEXPRESS;Initial Catalog=gestionnegocio;Integrated Security=True" SettingsObjectName="Negocio.Properties.Settings" SettingsPropertyName="gestionnegocioConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.articulos" Member="articulos">
+    <Type Name="articulos">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="marca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="stock_actual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stock_minimo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="precio_compra" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="precio_venta" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="proveedor_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.clientes" Member="clientes">
+    <Type Name="clientes">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="telefono" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="celular" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="documento" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.proveedors" Member="proveedors">
+    <Type Name="proveedors">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="cuit" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="telefono" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="celular" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

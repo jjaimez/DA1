@@ -47,7 +47,6 @@ namespace GestionDeNegocio
             txtId.Text = dvgTblClientes.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtCliente.Text = dvgTblClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtDocumento.Text = dvgTblClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
-            /**/
         }
 
         private void realizarVenta_Load(object sender, EventArgs e)

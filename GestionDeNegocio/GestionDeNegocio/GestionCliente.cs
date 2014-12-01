@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +22,7 @@ namespace GestionDeNegocio
 
         BDconexion bd = new BDconexion();
         
+        Negocio.Class1 obj = new Negocio.Class1();
 
         public GestionCliente()
         {
@@ -26,7 +30,7 @@ namespace GestionDeNegocio
             InitializeComponent();
         }
 
-       
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (txtId.Text == "" || txtNombre.Text == "" || txtDocumento.Text == "" || txtTelefono.Text == "" || txtCelular.Text == "" || txtEmail.Text == "")
@@ -38,24 +42,12 @@ namespace GestionDeNegocio
             {
                 try
                 {
-
-                    bd.insertarCliente(txtId, txtNombre, txtDocumento, txtTelefono, txtCelular, txtEmail);
-                    bd.mostrarClientes(dgv_Mostrar);
-                    MessageBox.Show("Se insertaron correctamente los datos");
-                    /*
-                    this.txtNombre.Enabled = false;
-                    this.txtTelefono.Enabled = false;
-                    this.txtDocumento.Enabled = false;
-                    this.txtEmail.Enabled = false;
-                    this.txtCelular.Enabled = false;
-                    this.btnGuardar.Enabled = false;*/
-                    
-
+                    obj.guardarCliente(int.Parse(txtId.Text), txtNombre.Text, txtDocumento.Text, txtTelefono.Text, txtCelular.Text, txtEmail.Text);
+                    MessageBox.Show("Guardado exitosamente!");
                 }
-                    
-                catch (Exception m)
+                catch (Exception x)
                 {
-                    MessageBox.Show("No se pudieron insertar los datos");
+                    MessageBox.Show(x.Message.ToString());
                 }
                 //Application.Restart();
                 this.txtNombre.Text = "";
@@ -83,24 +75,28 @@ namespace GestionDeNegocio
 
         private void GestionCliente_Load(object sender, EventArgs e)
         {
-            bd.mostrarClientes(dgv_Mostrar);
+            try 
+            {
+                obj.mostrarCliente(cb_buscar);
+            }
+            catch(Exception x)
+            {
+                MessageBox.Show(x.Message.ToString());
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            bd.cnn.Open();
-            string borra = "DELETE FROM CLIENTES WHERE ID='" + txtId.Text + "'";
-            SqlCommand cmd = new SqlCommand(borra, bd.cnn);
-            cmd.ExecuteNonQuery();
-            bd.cnn.Close();
-            bd.mostrarClientes(dgv_Mostrar);
-            this.txtId.Text = "";
-            this.txtNombre.Text = "";
-            this.txtDocumento.Text = "";
-            this.txtTelefono.Text = "";
-            this.txtCelular.Text = "";
-            this.txtEmail.Text = "";
-            MessageBox.Show("registro eliminado con exito");
+            try
+            {
+                MessageBox.Show("alerta", "desea eliminar ",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                obj.eliminar(lista.SelectedItem.ToString());
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message.ToString());
+            }
 
         }
 
@@ -108,59 +104,52 @@ namespace GestionDeNegocio
         {
             try
             {
-                //realizamos la consulta de actualizar en el q se toma desde el ID ingresado por el texboxId y despues que se modifique se actualiza los datos 
-                string Query = "update clientes set id='" + this.txtId.Text + "',nombre='" + this.txtNombre.Text
-                    + "',documento='" + this.txtDocumento.Text
-                    + "',telefono='" + this.txtTelefono.Text
-                    + "',celular='" + this.txtCelular.Text
-                    + "',email='" + this.txtEmail.Text
-                    + "' where id='" + this.txtId.Text + "';";
-                SqlCommand MyCommand2 = new SqlCommand(Query, bd.cnn);
-                SqlDataReader MyReader2;
-                bd.cnn.Open();
-                MyReader2 = MyCommand2.ExecuteReader();
-                MessageBox.Show("Registro modificado");
-                while (MyReader2.Read())
-                {
-                }
-                bd.cnn.Close();//
-                bd.mostrarClientes(dgv_Mostrar);//actualiza el datagridview
+                obj.modificar(txtNombre.Text, txtDocumento.Text, txtTelefono.Text, txtCelular.Text, txtEmail.Text, cb_buscar.Text);
+                MessageBox.Show("modificado exitosamente");
             }
-            catch (Exception ex)
+            catch (Exception x)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(x.Message.ToString());
             }
         }
         
         private void dgv_Mostrar_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            // Llenamos la información de la linea seleccionada en las
-            // respectivas cajitas de texto
-            txtId.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtNombre.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtDocumento.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtTelefono.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtCelular.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtEmail.Text = dgv_Mostrar.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
         private void txt_Buscar_KeyUp(object sender, KeyEventArgs e)
         {
-            bd.cnn.Open();
-            SqlCommand cmd = bd.cnn.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from clientes where nombre like('" + txt_Buscar.Text + "%')";
-            cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            dgv_Mostrar.DataSource = dt;
-            bd.cnn.Close();
+           
         }
 
         private void txt_Buscar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                obj.mostrarCliente(lista);
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message.ToString());
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                obj.cargar(cb_buscar.Text, txtNombre, txtDocumento, txtTelefono, txtCelular, txtEmail);
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message.ToString());
+            }
         }
 
       
