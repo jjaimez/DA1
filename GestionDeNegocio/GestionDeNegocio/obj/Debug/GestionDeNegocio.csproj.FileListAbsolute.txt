@@ -139,5 +139,3 @@ C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\RdlCo
 C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\GestionDeNegocio\obj\Debug\RdlCompile.compiled
 C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\Negocio.dll
 C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\Negocio.pdb
-C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\Negocio.dll
-C:\Users\FABIOLA\Desktop\DA1\GestionDeNegocio\GestionDeNegocio\bin\Debug\Negocio.pdb

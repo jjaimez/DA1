@@ -1,0 +1,17 @@
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\MainWindow.baml
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\MainWindow.g.cs
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\App.g.cs
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\WpfLogin_MarkupCompile.cache
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\WpfLogin.g.resources
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\WpfLogin.Properties.Resources.resources
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\WpfLogin.csproj.GenerateResource.Cache
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\bin\Debug\WpfLogin.exe.config
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\bin\Debug\WpfLogin.exe
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\bin\Debug\WpfLogin.pdb
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\WpfLogin.exe
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\WpfLogin.pdb
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\bin\Debug\GestionDeNegocio.exe
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\bin\Debug\Negocio.dll
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\bin\Debug\GestionDeNegocio.pdb
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\bin\Debug\Negocio.pdb
+C:\Users\FABIOLA\Downloads\DA1\GestionDeNegocio\WpfLogin\obj\Debug\WpfLogin.csprojResolveAssemblyReference.cache
